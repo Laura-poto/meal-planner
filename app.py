@@ -50,33 +50,31 @@ DATA_DIR = Path("data")
 match = engine.compute_matching(DATA_DIR)
 
 st.subheader("📊 Matching des recettes (marché / placard)")
-col1, col2 = st.columns([2, 1])
 
-with col1:
-    df = pd.DataFrame(match["scored"])
+df = pd.DataFrame(match["scored"])
 
-    # Renommage colonnes (voir section suivante)
-    df = df.rename(columns={
-        "category": "catégorie",
-        "name": "nom",
-        "score_market": "taux de match marché",
-        "score_pantry": "taux de match placard",
-        "manque_market": "manque marché",
-        "manque_pantry": "manque placard",
-    })
+# Renommage colonnes (voir section suivante)
+df = df.rename(columns={
+    "category": "catégorie",
+    "name": "nom",
+    "score_market": "taux de match marché",
+    "score_pantry": "taux de match placard",
+    "manque_market": "manque marché",
+    "manque_pantry": "manque placard",
+})
 
-    cols = ["catégorie", "nom", "taux de match marché", "taux de match placard", "manque marché", "manque placard", "link"]
-    cols = [c for c in cols if c in df.columns]  # sécurité
+cols = ["catégorie", "nom", "taux de match marché", "taux de match placard", "manque marché", "manque placard", "link"]
+cols = [c for c in cols if c in df.columns]  # sécurité
 
-    st.data_editor(
-        df[cols],
-        use_container_width=True,
-        height=520,
-        disabled=True,
-        column_config={
-            "link": st.column_config.LinkColumn("lien"),
-        },
-    )
+st.data_editor(
+    df[cols],
+    use_container_width=True,
+    height=520,
+    disabled=True,
+    column_config={
+        "link": st.column_config.LinkColumn("lien"),
+    },
+)
 
 st.divider()
 
