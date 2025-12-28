@@ -32,7 +32,7 @@ def format_courses(liste_courses: dict) -> str:
             if val is None:
                 qty = ""
             else:
-                qty = f"{val}{unit}".replace(" ", "")
+                qty = f"{val} {unit}".strip()
             recipes = d.get("recipes") or []
             n = len(recipes)
             recettes_txt = " / ".join(recipes)
