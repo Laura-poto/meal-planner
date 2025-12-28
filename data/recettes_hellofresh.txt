@@ -120,7 +120,7 @@
         "qty": 2,
         "unit": "tranche(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 125,
         "unit": "g"
       },
@@ -1040,7 +1040,7 @@
         "qty": 1,
         "unit": "pièce(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -1340,7 +1340,7 @@
         "qty": 1,
         "unit": "pièce(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -2092,7 +2092,7 @@
     "link": "https://www.hellofresh.fr/recipes/nouilles-udon-au-poulet-et-sauce-asiatique-douce-5e68df30071c951548165952",
     "category": "poulet",
     "ingredients": {
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -3960,7 +3960,7 @@
     "link": "https://www.hellofresh.fr/recipes/pizza-bianca-aux-champignons-5ebd0185470e7a2f041a9036",
     "category": "tarte",
     "ingredients": {
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -4356,7 +4356,7 @@
         "qty": 1,
         "unit": "pièce(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -4876,7 +4876,7 @@
         "qty": 1,
         "unit": "pièce(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -6052,7 +6052,7 @@
         "qty": 150,
         "unit": "g"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -6336,7 +6336,7 @@
         "qty": 1,
         "unit": "pièce(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -7632,7 +7632,7 @@
         "qty": 1,
         "unit": "pièce(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -7968,7 +7968,7 @@
         "qty": 60,
         "unit": "g"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 125,
         "unit": "g"
       },
@@ -8100,7 +8100,7 @@
         "qty": 400,
         "unit": "g"
       },
-      "Champignons blonds": {
+      "Champignon": {
         "qty": 125,
         "unit": "g"
       },
@@ -8158,7 +8158,7 @@
     "difficulty": "Intermédiaire",
     "desc_part_1": "1 Préparez le bouillon. Épluchez ou lavez bien les pommes de terre et taillez-les en rondelles de 1/2 cm. Faites chauffer la moitié de l’huile d’olive dans la sauteuse et, à couvert, faites cuire les pommes de terre 15 à 20 minutes à feu moyen-vif. Retirez le couvercle lors des 5 dernières. Salez et poivrez.",
     "desc_part_2": "2 Pendant ce temps, taillez les champignons en quartiers. Écrasez l’ail ou hachez-le finement et émincez l’échalote. Détachez les feuilles de romarin des brins et ciselez-les grossièrement. Faites chauffer la moitié du beurre dans la poêle à feu moyen-vif et faites cuire le filet de poulet 2 à 3 minutes de chaque côté. Réservez-le hors de la poêle : il ne doit pas être encore cuit. Pendant ce temps, coupez les bouquets de brocoli en fleurettes et les tiges en morceaux.",
-    "desc_part_3": "3 Faites chauffer le reste du beurre dans la même poêle et faites revenir l’échalote 1 à 2 minutes. Ajoutez les champignons blonds et l’ail, puis poursuivez la cuisson 2 à 3 minutes.",
+    "desc_part_3": "3 Faites chauffer le reste du beurre dans la même poêle et faites revenir l’échalote 1 à 2 minutes. Ajoutez les Champignon et l’ail, puis poursuivez la cuisson 2 à 3 minutes.",
     "desc_part_4": "4 Faites chauffer le reste de l’huile d’olive à feu vif dans la sauteuse et faites revenir les brocolis 1 à 2 minutes. Arrosez avec 125 ml de bouillon par personne (attention, gardez le reste pour l'étape 5). Baissez le feu sur doux et laissez les brocolis étuver à couvert 10 à 12 minutes. Égouttez-les si nécessaire.",
     "desc_part_5": "5 Arrosez les champignons avec 75 ml de bouillon par personne. Ajoutez le vinaigre blanc, la moutarde et le romarin. Baissez le feu, ajoutez la crème et laissez réduire 12 minutes. Ajoutez le poulet lors des 5 dernières minutes pour terminer la cuisson.",
     "desc_part_6": "6 Servez les brocolis et les pommes de terre sur les assiettes, puis le poulet dans sa sauce à la crème et à la moutarde."
@@ -8180,7 +8180,7 @@
         "qty": 1,
         "unit": "pièce(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 125,
         "unit": "g"
       },
@@ -8548,7 +8548,7 @@
         "qty": 180,
         "unit": "g"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -8940,7 +8940,7 @@
     "link": "https://www.hellofresh.fr/recipes/filet-de-poulet-and-sauce-forestiere-6050ac7e49441001180c2871",
     "category": "poulet",
     "ingredients": {
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -9884,7 +9884,7 @@
         "qty": 2,
         "unit": "cm"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 125,
         "unit": "g"
       },
@@ -10836,7 +10836,7 @@
         "qty": 1,
         "unit": "pièce(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -10892,7 +10892,7 @@
         "qty": 1,
         "unit": "pièce(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 125,
         "unit": "g"
       },
@@ -11932,7 +11932,7 @@
         "qty": 1,
         "unit": "pièce(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -11996,7 +11996,7 @@
         "qty": 1,
         "unit": "pièce(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 125,
         "unit": "g"
       },
@@ -13356,7 +13356,7 @@
         "qty": 1,
         "unit": "pièce(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 125,
         "unit": "g"
       },
@@ -14508,7 +14508,7 @@
         "qty": 0.5,
         "unit": "pièce(s)"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 250,
         "unit": "g"
       },
@@ -16020,7 +16020,7 @@
         "qty": 135,
         "unit": "g"
       },
-      "Champignons de Paris": {
+      "Champignon": {
         "qty": 125,
         "unit": "g"
       },
