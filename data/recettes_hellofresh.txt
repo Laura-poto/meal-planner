@@ -2,7 +2,7 @@
   {
     "name": "Lasagnes à la bolognaise",
     "link": "https://www.marmiton.org/recettes/recette_lasagnes-a-la-bolognaise_18215.aspx",
-    "category": "boeuf haché",
+    "category": "🌮 boeuf haché",
     "ingredients": {
       "Feuilles de lasagne": {
         "qty": 200,
@@ -82,7 +82,7 @@
   {
     "name": "La pâte à galettes de blé noir traditionnelle",
     "link": "https://www.marmiton.org/recettes/recette_la-pate-a-galettes-de-ble-noir-traditionnelle_35351.aspx",
-    "category": "craquage",
+    "category": "🎉 craquage",
     "ingredients": {
       "Farine de blé noir": {
         "qty": 132,
@@ -150,7 +150,7 @@
   {
     "name": "Gratin de ravioles du Dauphiné au comté",
     "link": "https://www.750g.com/gratin-de-ravioles-du-dauphine-au-comte-r208023.htm",
-    "category": "craquage",
+    "category": "🎉 craquage",
     "ingredients": {
       "Ravioles de Royan": {
         "qty": 240,
@@ -182,7 +182,7 @@
   {
     "name": "Spaghetti bolognaise",
     "link": "https://www.marmiton.org/recettes/recette_spaghetti-bolognaise_19840.aspx",
-    "category": "boeuf haché",
+    "category": "🌮 boeuf haché",
     "ingredients": {
       "Oignon": {
         "qty": 0.5,
@@ -246,7 +246,7 @@
   {
     "name": "Tagliatelles au saumon frais",
     "link": "https://www.marmiton.org/recettes/recette_tagliatelles-au-saumon-frais_11354.aspx",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Crème fraîche": {
         "qty": 100,
@@ -298,7 +298,7 @@
   {
     "name": "Croziflette",
     "link": "https://www.marmiton.org/recettes/recette_croziflette_165464.aspx",
-    "category": "craquage",
+    "category": "🎉 craquage",
     "ingredients": {
       "Crème fraîche": {
         "qty": 100,
@@ -346,7 +346,7 @@
  {
     "name": "Croque-monsieur",
     "link": "https://www.marmiton.org/recettes/recette_croque-monsieur_19208.aspx",
-    "category": "craquage",
+    "category": "🎉 craquage",
     "ingredients": {
      "Jambon blanc": {
         "qty": 4,
@@ -390,7 +390,7 @@
   {
     "name": "Saumon en papillote & pistou maison",
     "link": "https://www.hellofresh.fr/recipes/saumon-en-papillote-and-pistou-maison-625fbe3806486938dc2f4584",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Courgette": {
         "qty": 1,
@@ -450,7 +450,7 @@
   {
     "name": "Salade de chèvre, nectarine & tomate",
     "link": "https://www.hellofresh.fr/recipes/salade-de-chevre-nectarine-and-tomate-628b8b61c6ee1b00810d8902",
-    "category": "salade",
+    "category": "🥬 salade",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -514,7 +514,7 @@
   {
     "name": "Curry d'aubergine rôtie & pois chiches",
     "link": "https://www.hellofresh.fr/recipes/curry-daubergine-rotie-and-pois-chiches-629e031506287fd74e0efc02",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Aubergine": {
         "qty": 1,
@@ -598,7 +598,7 @@
   {
     "name": "Linguine & pesto d’épinards maison",
     "link": "https://www.hellofresh.fr/recipes/linguine-and-pesto-depinards-maison-62b26056828c7ddc7107e451",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Linguine": {
         "qty": 180,
@@ -662,7 +662,7 @@
   {
     "name": "Salade couscous perlé, feta rôtie & grenade",
     "link": "https://www.hellofresh.fr/recipes/salade-couscous-perle-feta-rotie-and-grenade-62c31ec1b6367154fe0f1dc1",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Couscous perlé": {
         "qty": 170,
@@ -730,7 +730,7 @@
   {
     "name": "Salade de couscous perlé & fromage grillé",
     "link": "https://www.hellofresh.fr/recipes/salade-de-couscous-perle-and-fromage-grille-62cc072f5216331c1e0e4890",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Concombre": {
         "qty": 1,
@@ -798,7 +798,7 @@
   {
     "name": "One pot d'orzo & fromage italien",
     "link": "https://www.hellofresh.fr/recipes/one-pot-dorzo-and-fromage-italien-632b344613c7e3bee208b129",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -862,7 +862,7 @@
   {
     "name": "Salade thaï aux émincés végétariens",
     "link": "https://www.hellofresh.fr/recipes/salade-thai-aux-eminces-vegetariens-63342076b93186a4f50059c2",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -946,7 +946,7 @@
   {
     "name": "Dahl de lentilles, patate douce & épinards",
     "link": "https://www.hellofresh.fr/recipes/dahl-de-lentilles-patate-douce-and-epinards-633c277744029bb2460ec763",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -1030,7 +1030,7 @@
   {
     "name": "Conchiglie & fricassée de champignons",
     "link": "https://www.hellofresh.fr/recipes/conchiglie-and-fricassee-de-champignons-63456c5f14419253d70b2bbb",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Oignon rouge": {
         "qty": 1,
@@ -1094,7 +1094,7 @@
   {
     "name": "Butternut grillé, labneh & beurre au curcuma",
     "link": "https://www.hellofresh.fr/recipes/butternut-grille-labneh-and-beurre-au-curcuma-634578e5602ededf96020aa9",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Courge butternut": {
         "qty": 300,
@@ -1178,7 +1178,7 @@
   {
     "name": "Poulet thaï au curry vert & lait de coco",
     "link": "https://www.hellofresh.fr/recipes/poulet-thai-au-curry-vert-and-lait-de-coco-636a245841a58210a7065b81",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Échalote": {
         "qty": 1,
@@ -1250,7 +1250,7 @@
   {
     "name": "Salade d'orzo & crevettes au curry",
     "link": "https://www.hellofresh.fr/recipes/salade-dorzo-and-crevettes-au-curry-6374ad7c021d8c79400b4389",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Orzo": {
         "qty": 150,
@@ -1334,7 +1334,7 @@
   {
     "name": "Spaghetti aux poireaux & lardons",
     "link": "https://www.hellofresh.fr/recipes/spaghetti-aux-poireaux-and-lardons-6374af42caa505f06502c8e2",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Poireau": {
         "qty": 1,
@@ -1382,7 +1382,7 @@
   {
     "name": "Poulet en papillote à la citronnelle",
     "link": "https://www.hellofresh.fr/recipes/poulet-en-papillote-a-la-citronnelle-6374b6b546dc2e55b1010c03",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Patate douce": {
         "qty": 450,
@@ -1454,7 +1454,7 @@
   {
     "name": "Nouilles au poulet épicé & lait de coco",
     "link": "https://www.hellofresh.fr/recipes/nouilles-au-poulet-epice-and-lait-de-coco-6374ba3ba13e2c733a0d37af",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gingembre frais": {
         "qty": 2,
@@ -1530,7 +1530,7 @@
   {
     "name": "Salade orientale de légumes rôtis",
     "link": "https://www.hellofresh.fr/recipes/salade-orientale-de-legumes-rotis-64d28acab199bd79fa716eb7",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Carotte": {
         "qty": 1,
@@ -1614,7 +1614,7 @@
   {
     "name": "Green lasagne poireaux-épinards",
     "link": "https://www.hellofresh.fr/recipes/lasagne-poireaux-and-epinards-64fb2d2532e9107c6db883de",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Poireau": {
         "qty": 1,
@@ -1686,7 +1686,7 @@
   {
     "name": "Risotto aux topinambours & pecorino râpé",
     "link": "https://www.hellofresh.fr/recipes/risotto-aux-topinambours-and-pecorino-rape-65648f435234ba85b73be5d8",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Échalote": {
         "qty": 1,
@@ -1758,7 +1758,7 @@
   {
     "name": "Rigatoni aux épinards, miso & champignons",
     "link": "https://www.hellofresh.fr/recipes/rigatoni-aux-epinards-frais-miso-and-champignons-65d86d7d13ff8a4fe7076ba3",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Rigatoni": {
         "qty": 180,
@@ -1822,7 +1822,7 @@
   {
     "name": "Poivron farci tex-mex: dinde & cheddar",
     "link": "https://www.hellofresh.fr/recipes/poivron-farci-tex-mex-dinde-and-cheddar-6557744953b95b70f997d36c",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Poivron": {
         "qty": 2,
@@ -1890,7 +1890,7 @@
   {
     "name": "Courgette grillée, labneh & beurre au curcuma",
     "link": "https://www.hellofresh.fr/recipes/courgette-grillee-labneh-and-beurre-au-curcuma-65f410d14690e3c09046dd84",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Courgette": {
         "qty": 1,
@@ -1974,7 +1974,7 @@
   {
     "name": "Gratin éclair de gnocchi, champis & épinards",
     "link": "https://www.hellofresh.fr/recipes/gratin-eclair-de-gnocchi-champis-and-epinards-65e58e07f5a5196d85e983be",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -2026,7 +2026,7 @@
   {
     "name": "Poêlée de poulet, pak choï & sauce chili sucrée",
     "link": "https://www.hellofresh.fr/recipes/poelee-de-poulet-pak-choi-and-sauce-chili-sucree-6564b1ab2d94ad532d620cd5",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Riz": {
         "qty": 150,
@@ -2090,7 +2090,7 @@
   {
     "name": "Nouilles udon au poulet et sauce asiatique douce",
     "link": "https://www.hellofresh.fr/recipes/nouilles-udon-au-poulet-et-sauce-asiatique-douce-5e68df30071c951548165952",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Champignon": {
         "qty": 250,
@@ -2158,7 +2158,7 @@
   {
     "name": "Salade de pêche, tomate & burrata",
     "link": "https://www.hellofresh.fr/recipes/salade-de-peche-tomate-and-burrata-629e0821d3792c40b7096588",
-    "category": "salade",
+    "category": "🥬 salade",
     "ingredients": {
       "Petit pain": {
         "qty": 2,
@@ -2218,7 +2218,7 @@
   {
     "name": "Salade orientale de boulgour & légumes rôtis",
     "link": "https://www.hellofresh.fr/recipes/salade-orientale-de-boulgour-and-legumes-rotis-654cb1f22d94ad532d5ffacb",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -2298,7 +2298,7 @@
   {
     "name": "Salade orientale : pois chiches, avocat & feta",
     "link": "https://www.hellofresh.fr/recipes/salade-orientale-pois-chiches-avocat-and-feta-637cf1f0dc2add721f00b1a2",
-    "category": "salade",
+    "category": "🥬 salade",
     "ingredients": {
       "Pois chiches": {
         "qty": 1,
@@ -2366,7 +2366,7 @@
   {
     "name": "Salade de quinoa, courge rôtie & tahini",
     "link": "https://www.hellofresh.fr/recipes/salade-de-quinoa-courge-rotie-and-tahini-60103846007bed4ed44a028b",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -2454,7 +2454,7 @@
   {
     "name": "Salade de couscous perlé, feta rôtie & sésame",
     "link": "https://www.hellofresh.fr/recipes/salade-de-couscous-perle-feta-rotie-and-sesame-61f945ecb4a2b76faf1c6c52",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Couscous perlé": {
         "qty": 85,
@@ -2526,7 +2526,7 @@
   {
     "name": "Salade de couscous perlé, feta & pistaches",
     "link": "https://www.hellofresh.fr/recipes/salade-de-couscous-perle-feta-and-pistaches-61f0341d7f66ba6620393a22",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Patate douce": {
         "qty": 300,
@@ -2602,7 +2602,7 @@
   {
     "name": "Salade couscous perlé, feta rôtie & grenade",
     "link": "https://www.hellofresh.fr/recipes/salade-couscous-perle-feta-rotie-and-grenade-5f2056e2038e4c0319655ca2",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Couscous perlé": {
         "qty": 170,
@@ -2670,7 +2670,7 @@
   {
     "name": "Salade d'orge perlé au zaatar & pistaches",
     "link": "https://www.hellofresh.fr/recipes/salade-dorge-perle-au-zaatar-and-pistaches-612f7ee45d897146fc0e02ef",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Orge perlé": {
         "qty": 130,
@@ -2750,7 +2750,7 @@
   {
     "name": "Salade de penne, burrata & tomates cerises",
     "link": "https://www.hellofresh.fr/recipes/salade-de-penne-burrata-and-tomates-cerises-60a3cb95f8b5a66d7405cbc4",
-    "category": "salade",
+    "category": "🥬 salade",
     "ingredients": {
       "Penne": {
         "qty": 180,
@@ -2818,7 +2818,7 @@
   {
     "name": "Velouté ensoleillé de poivron & patate douce",
     "link": "https://www.hellofresh.fr/recipes/veloute-ensoleille-de-poivron-and-patate-douce-647085e40c1e02e39244a3a4",
-    "category": "soupe",
+    "category": "🍜 soupe",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -2878,7 +2878,7 @@
   {
     "name": "Soupe réconfortante au brocoli & gouda",
     "link": "https://www.hellofresh.fr/recipes/soupe-reconfortante-au-brocoli-and-gouda-63d915bc417579056e01b611",
-    "category": "soupe",
+    "category": "🍜 soupe",
     "ingredients": {
       "Carotte": {
         "qty": 1,
@@ -2950,7 +2950,7 @@
   {
     "name": "Velouté de cresson",
     "link": "https://www.hellofresh.fr/recipes/veloute-de-cresson-5f4e4bd22f1c114a8568aad4",
-    "category": "soupe",
+    "category": "🍜 soupe",
     "ingredients": {
       "Grenailles rouges": {
         "qty": 135,
@@ -3014,7 +3014,7 @@
   {
     "name": "Velouté de chou-fleur & parmesan AOP",
     "link": "https://www.hellofresh.fr/recipes/veloute-de-chou-fleur-and-parmesan-aop-638f67612f93e70745067e41",
-    "category": "soupe",
+    "category": "🍜 soupe",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -3082,7 +3082,7 @@
   {
     "name": "Soupe de marrons & lardons fumés",
     "link": "https://www.hellofresh.fr/recipes/soupe-de-marrons-and-lardons-fumes-64d3b20dc6d2a3702a70fd8f",
-    "category": "soupe",
+    "category": "🍜 soupe",
     "ingredients": {
       "Marrons": {
         "qty": 1,
@@ -3134,7 +3134,7 @@
   {
     "name": "Velouté de panais, coco & noisettes",
     "link": "https://www.hellofresh.fr/recipes/veloute-de-panais-coco-and-noisettes-615c48ec79610c1e4739481d",
-    "category": "soupe",
+    "category": "🍜 soupe",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -3202,7 +3202,7 @@
   {
     "name": "Chorba aadess : soupe de lentilles égyptienne",
     "link": "https://www.hellofresh.fr/recipes/chorba-aadess-soupe-de-lentilles-egyptienne-637ced2e62a4f00d92047e9c",
-    "category": "soupe",
+    "category": "🍜 soupe",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -3290,7 +3290,7 @@
   {
     "name": "Locro de papa : soupe Péruvienne avec de l'avocat",
     "link": "https://www.hellofresh.fr/recipes/locro-de-papa-soupe-peruvienne-avec-de-lavocat-642fdc74f64a988df102a07a",
-    "category": "soupe",
+    "category": "🍜 soupe",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -3370,7 +3370,7 @@
   {
     "name": "Soupe patate douce, lait de coco & garam masala",
     "link": "https://www.hellofresh.fr/recipes/soupe-patate-douce-lait-de-coco-and-garam-masala-60911260358879621d71f8e2",
-    "category": "soupe",
+    "category": "🍜 soupe",
     "ingredients": {
       "Patate douce": {
         "qty": 300,
@@ -3438,7 +3438,7 @@
   {
     "name": "Velouté lentilles corail, coco & carotte",
     "link": "https://www.hellofresh.fr/recipes/veloute-de-lentilles-corail-coco-and-carotte-668be3b765ae7b0dd9112ec9",
-    "category": "soupe",
+    "category": "🍜 soupe",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -3510,7 +3510,7 @@
   {
     "name": "Velouté de butternut, crème de coco & curcuma",
     "link": "https://www.hellofresh.fr/recipes/veloute-de-butternut-creme-de-coco-and-curcuma-5faacc8c3455223f4a7ca99d",
-    "category": "soupe",
+    "category": "🍜 soupe",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -3586,7 +3586,7 @@
   {
     "name": "Soupe de courgette et Pesto de champignons",
     "link": "https://www.hellofresh.fr/recipes/soupe-de-courgette-et-pesto-aux-champignons-des-bois-5c0109b1e3f33939b9758b82",
-    "category": "soupe",
+    "category": "🍜 soupe",
     "ingredients": {
       "Oignon jaune": {
         "qty": 1,
@@ -3642,7 +3642,7 @@
   {
     "name": "Tarte arc-en-ciel & mozzarella",
     "link": "https://www.hellofresh.fr/recipes/tarte-arc-en-ciel-and-mozzarella-640b635ab1bd442c3cd15d9b",
-    "category": "tarte",
+    "category": "🥧 tarte",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -3714,7 +3714,7 @@
   {
     "name": "Tarte bianca à la mozzarella & courgette",
     "link": "https://www.hellofresh.fr/recipes/tarte-bianca-a-la-mozzarella-and-courgette-64073cf8df6297bb5beef1f7",
-    "category": "tarte",
+    "category": "🥧 tarte",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -3782,7 +3782,7 @@
   {
     "name": "Tarte provençale courgettes & ricotta",
     "link": "https://www.hellofresh.fr/recipes/tarte-provencale-courgettes-and-ricotta-64073d7a683721c9a32b0842",
-    "category": "tarte",    
+    "category": "🥧 tarte",    
     "ingredients": {
       "Pâte à tarte": {
         "qty": 1,
@@ -3850,7 +3850,7 @@
   {
     "name": "Tarte fine aux tomates cerises & pesto",
     "link": "https://www.hellofresh.fr/recipes/tarte-fine-aux-tomates-cerises-and-pesto-631840cd14bd988fd904605c",
-    "category": "tarte",
+    "category": "🥧 tarte",
     "ingredients": {
       "Tomates cerises": {
         "qty": 250,
@@ -3902,7 +3902,7 @@
   {
     "name": "Tarte fine aux tomates & au cantal",
     "link": "https://www.hellofresh.fr/recipes/tarte-fine-aux-tomates-and-au-cantal-642e819b4e15eb605b2042e3",
-    "category": "tarte",
+    "category": "🥧 tarte",
     "ingredients": {
       "Pâte à tarte": {
         "qty": 0.66,
@@ -3958,7 +3958,7 @@
   {
     "name": "Pizza bianca aux champignons",
     "link": "https://www.hellofresh.fr/recipes/pizza-bianca-aux-champignons-5ebd0185470e7a2f041a9036",
-    "category": "tarte",
+    "category": "🥧 tarte",
     "ingredients": {
       "Champignon": {
         "qty": 250,
@@ -4022,7 +4022,7 @@
   {
     "name": "Flammekueche oignons & lardons",
     "link": "https://www.hellofresh.fr/recipes/flammekueche-oignons-and-lardons-624c65f89267e96ddb4341e7",
-    "category": "tarte",
+    "category": "🥧 tarte",
     "ingredients": {
       "Oignon": {
         "qty": 2,
@@ -4090,7 +4090,7 @@
   {
     "name": "Tarte aux poireaux & lardons à l'ancienne",
     "link": "https://www.hellofresh.fr/recipes/tarte-aux-poireaux-and-lardons-a-lancienne-648b67a625862a444bdb62f1",
-    "category": "tarte",
+    "category": "🥧 tarte",
     "ingredients": {
       "Pâte à tarte": {
         "qty": 1,
@@ -4158,7 +4158,7 @@
   {
     "name": "Tarte fine camembert & pommes à l'alsacienne",
     "link": "https://www.hellofresh.fr/recipes/tarte-fine-camembert-and-pommes-a-lalsacienne-659bc6fa6b4bf2cf1c67fa64",
-    "category": "tarte",
+    "category": "🥧 tarte",
     "ingredients": {
       "Pâte à tarte": {
         "qty": 1,
@@ -4226,7 +4226,7 @@
   {
     "name": "Pizza sur naan au bœuf haché et aux épinards",
     "link": "https://www.hellofresh.fr/recipes/pizza-sur-naan-au-boeuf-hache-et-aux-epinards-5c545d58e3f33934cf024013",
-    "category": "tarte",
+    "category": "🥧 tarte",
     "ingredients": {
       "Pain naan": {
         "qty": 2,
@@ -4286,7 +4286,7 @@
   {
     "name": "Conchiglie au pesto alla genovese & Mozzarella",
     "link": "https://www.hellofresh.fr/recipes/conchiglie-au-pesto-alla-genovese-and-mozzarella-di-bufala-5f32c8d0d6a53f48a059486d",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -4346,7 +4346,7 @@
   {
     "name": "Conchiglie & fricassée de champignons",
     "link": "https://www.hellofresh.fr/recipes/conchiglie-and-fricassee-de-champignons-62fcd272dd43cc8b0000e738",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Oignon rouge": {
         "qty": 1,
@@ -4410,7 +4410,7 @@
   {
     "name": "Gratin courgette-mozza & conchiglie",
     "link": "https://www.hellofresh.fr/recipes/gratin-courgette-mozza-and-pates-652d42316720825b47fd8a0e",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Courgette": {
         "qty": 1,
@@ -4482,7 +4482,7 @@
   {
     "name": "Linguine et pesto d’épinards maison",
     "link": "https://www.hellofresh.fr/recipes/linguine-et-pesto-depinards-maison-616e8bb725f0ce4a3711b11b",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Linguine": {
         "qty": 180,
@@ -4542,7 +4542,7 @@
   {
     "name": "Penne & crème de tomates séchées",
     "link": "https://www.hellofresh.fr/recipes/penne-and-creme-de-tomates-sechees-61657b6b2d4427482818069e",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -4614,7 +4614,7 @@
   {
     "name": "Penne, Pesto vert & pistaches",
     "link": "https://www.hellofresh.fr/recipes/penne-creme-de-basilic-and-pistaches-60911dcffc28da123053b7ac",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -4682,7 +4682,7 @@
   {
     "name": "Fusilli au pesto maison de basilic & roquette",
     "link": "https://www.hellofresh.fr/recipes/fusilli-au-pesto-maison-de-basilic-and-roquette-60bf75e952130e343e341dd4",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Fusilli": {
         "qty": 180,
@@ -4738,7 +4738,7 @@
   {
     "name": "Casarecce, burrata et crème de tomates",
     "link": "https://www.hellofresh.fr/recipes/casarecce-burrata-et-creme-de-tomates-60f6d2309aeace22817cb2c1",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -4810,7 +4810,7 @@
   {
     "name": "Rigatoni al pesto verde & burrata cremosa",
     "link": "https://www.hellofresh.fr/recipes/rigatoni-al-pesto-verde-and-burrata-cremosa-64119a157bee82308d5512ef",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -4862,7 +4862,7 @@
   {
     "name": "Rigatoni al pesto & pomodoro",
     "link": "https://www.hellofresh.fr/recipes/rigatoni-al-pesto-and-pomodoro-64073d04683721c9a32b0811",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Rigatoni": {
         "qty": 180,
@@ -4926,7 +4926,7 @@
   {
     "name": "Rigatoni, endives poêlées & comté",
     "link": "https://www.hellofresh.fr/recipes/rigatoni-endives-poelees-and-comte-603e710dce4e090209336f6d",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Rigatoni": {
         "qty": 180,
@@ -4986,7 +4986,7 @@
   {
     "name": "Rigatoni au pesto verde, épinards & burrata",
     "link": "https://www.hellofresh.fr/recipes/rigatoni-au-pesto-verde-epinards-and-burrata-64fb2d9671b62ce1283423d2",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Rigatoni": {
         "qty": 180,
@@ -5042,7 +5042,7 @@
   {
     "name": "Farfalle à la courgette & noisettes",
     "link": "https://www.hellofresh.fr/recipes/fiocchi-tricolores-a-la-courgette-and-noisettes-6801176e5886e6cfbf377b74",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Courgette": {
         "qty": 2,
@@ -5110,7 +5110,7 @@
   {
     "name": "Ravioli sauce à la crème et aux épinards",
     "link": "https://www.hellofresh.fr/recipes/ravioli-sauce-a-la-creme-et-aux-epinards-5d725f0ebe981f000e241c8c",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -5166,7 +5166,7 @@
   {
     "name": "Gnocchi minute : courgette & pecorino",
     "link": "https://www.hellofresh.fr/recipes/gnocchi-a-la-creme-de-basilic-and-pecorino-6565ab4d5234ba85b73bf965",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Courgette": {
         "qty": 1,
@@ -5222,7 +5222,7 @@
   {
     "name": "Gnocchi aux champignons et à la crème",
     "link": "https://www.hellofresh.lu/recipes/gnocchi-aux-champignons-et-a-la-creme-609e988a651ba1441f15761b",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Noisettes": {
         "qty": 20,
@@ -5278,7 +5278,7 @@
   {
     "name": "Mac & Cheese au potiron",
     "link": "https://www.hellofresh.fr/recipes/mac-and-cheese-au-potiron-5f8554e564586a2b8413e2e4",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Coquillette": {
         "qty": 180,
@@ -5350,7 +5350,7 @@
   {
     "name": "Soupe de nouilles soba aux champignons",
     "link": "https://www.hellofresh.fr/recipes/soupe-de-nouilles-soba-aux-champignons-60238f93e28c112717016a34",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Nouilles soba": {
         "qty": 200,
@@ -5418,7 +5418,7 @@
   {
     "name": "Wok de nouilles sautées aux légumes",
     "link": "https://www.hellofresh.fr/recipes/wok-de-nouilles-sautees-aux-legumes-620d011b6e5cc37c8e6b5788",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Carotte": {
         "qty": 1,
@@ -5478,7 +5478,7 @@
   {
     "name": "Wok de nouilles udon aux légumes & gomasio",
     "link": "https://www.hellofresh.fr/recipes/wok-de-nouilles-udon-aux-legumes-and-gomasio-5f60ae504e8ae57f155d7b15",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Gingembre frais": {
         "qty": 4,
@@ -5550,7 +5550,7 @@
   {
     "name": "Curry laksa de nouilles & coco",
     "link": "https://www.hellofresh.fr/recipes/laksa-veggie-aux-legumes-65435dfc3357e0637a828e18",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Carotte": {
         "qty": 1,
@@ -5630,7 +5630,7 @@
   {
     "name": "Lasagne verdi à la courgette & épinards",
     "link": "https://www.hellofresh.fr/recipes/lasagne-verdi-a-la-courgette-and-epinards-6793a8235fbdb4aa73bc5d52",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Courgette": {
         "qty": 1,
@@ -5706,7 +5706,7 @@
   {
     "name": "Orzo pilaf italien al spinaci & pomodori",
     "link": "https://www.hellofresh.fr/recipes/orzo-pilaf-italien-al-spinaci-and-pomodori-64073f9edf6297bb5beef2e6",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Oignon rouge": {
         "qty": 1,
@@ -5766,7 +5766,7 @@
   {
     "name": "Orzo façon risotto aux épinards & poireau",
     "link": "https://www.hellofresh.fr/recipes/orzo-facon-risotto-aux-epinards-and-poireau-6243130885c236274169657e",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -5838,7 +5838,7 @@
   {
     "name": "Risotto d'orzo aux champignons",
     "link": "https://www.hellofresh.fr/recipes/risotto-dorzo-aux-champignons-5ffdbcf27c5227587008318a",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Échalote": {
         "qty": 1,
@@ -5898,7 +5898,7 @@
   {
     "name": "Risotto à la tomate & au lait de coco",
     "link": "https://www.hellofresh.fr/recipes/risotto-a-la-tomate-and-au-lait-de-coco-5f3bf0c81aab4d4a6b475f79",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -5974,7 +5974,7 @@
   {
     "name": "Risotto d’hiver aux topinambours",
     "link": "https://www.hellofresh.fr/recipes/risotto-dhiver-aux-topinambours-5dde7987f3e6147286036a6c",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Échalote": {
         "qty": 1,
@@ -6038,7 +6038,7 @@
   {
     "name": "Risotto de poulet & champignons",
     "link": "https://www.hellofresh.fr/recipes/risotto-soyeux-de-poulet-and-champignons-65648f3053b95b70f99920fe",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Échalote": {
         "qty": 1,
@@ -6102,7 +6102,7 @@
   {
     "name": "Riz au lait de coco & tofu poêlé",
     "link": "https://www.hellofresh.fr/recipes/riz-au-lait-de-coco-and-tofu-poele-60882cce985ddb4c7b0de3a3",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 2,
@@ -6194,7 +6194,7 @@
   {
     "name": "Linguine & duo de tomates",
     "link": "https://www.hellofresh.fr/recipes/linguine-and-duo-de-tomates-60acfb0fdafa7d072d18a68c",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Basilic": {
         "qty": 5,
@@ -6274,7 +6274,7 @@
   {
     "name": "Tagliatelle, crème de pecorino & noix",
     "link": "https://www.hellofresh.fr/recipes/tagliatelle-creme-de-pecorino-and-noix-623ad5f618dec2115f016435",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -6326,7 +6326,7 @@
   {
     "name": "Poêlée de lentilles & champignons à la crème",
     "link": "https://www.hellofresh.fr/recipes/poelee-de-lentilles-and-champignons-a-la-creme-615c48bbb38d103e812b44bd",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 3,
@@ -6398,7 +6398,7 @@
   {
     "name": "Monggo philippin ou lentilles au lait de coco",
     "link": "https://www.hellofresh.fr/recipes/monggo-philippin-ou-lentilles-au-lait-de-coco-624313344b8cc66e1921ec32",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -6470,7 +6470,7 @@
   {
     "name": "Wraps de fromage grillé & oignons confits",
     "link": "https://www.hellofresh.fr/recipes/wraps-de-fromage-grille-and-oignons-confits-6075bb41e4f85e103c291c03",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Oignon rouge": {
         "qty": 1,
@@ -6542,7 +6542,7 @@
   {
     "name": "Quesadillas cheddar, maïs & crema de citron vert",
     "link": "https://www.hellofresh.fr/recipes/quesadillas-cheddar-mais-and-crema-de-citron-vert-6063424754c465794e3f271a",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Courgette": {
         "qty": 0.66,
@@ -6618,7 +6618,7 @@
   {
     "name": "Bowl libanais : taboulé & houmous maison",
     "link": "https://www.hellofresh.fr/recipes/bowl-libanais-taboule-and-houmous-maison-6255d96316319060477eadcb",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Boulgour": {
         "qty": 45,
@@ -6698,7 +6698,7 @@
   {
     "name": "Buddha Bowl aux falafels & sauce yaourt",
     "link": "https://www.hellofresh.fr/recipes/bowl-frais-aux-falafels-saveur-coriandre-66c59821148d730f514f74ef",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Patate douce": {
         "qty": 1,
@@ -6762,7 +6762,7 @@
   {
     "name": "Bowl de boulgour aux légumes rôtis",
     "link": "https://www.hellofresh.fr/recipes/bowl-de-boulgour-aux-legumes-rotis-6006f549b9aa2a21db05fd46",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Chou-fleur": {
         "qty": 300,
@@ -6850,7 +6850,7 @@
   {
     "name": "Assiette du levant falafels & labneh",
     "link": "https://www.hellofresh.fr/recipes/assiette-du-levant-falafels-and-carottes-au-miel-6686933a65ae7b0dd911182c",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Carotte": {
         "qty": 2,
@@ -6922,7 +6922,7 @@
   {
     "name": "Freekeh épicé à l'orientale, carottes & épinards",
     "link": "https://www.hellofresh.fr/recipes/freekeh-epice-a-lorientale-carottes-and-epinards-6294d56bc40fb4b3d808b8e9",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Carotte": {
         "qty": 2,
@@ -6990,7 +6990,7 @@
   {
     "name": "Berkoukes sans viande : couscous perlé & céleri",
     "link": "https://www.hellofresh.fr/recipes/berkoukes-sans-viande-couscous-perle-and-cumin-66a8b1d071ae0e887989f7ed",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -7066,7 +7066,7 @@
   {
     "name": "Butter masala végétarien aux légumes",
     "link": "https://www.hellofresh.fr/recipes/butter-masala-vegetarien-aux-legumes-62cc063f6add783241093262",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -7138,7 +7138,7 @@
   {
     "name": "Curry indien de pois chiches & patate douce",
     "link": "https://www.hellofresh.fr/recipes/curry-indien-de-pois-chiches-and-patate-douce-63456a607a0d2ed8f30e8a02",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Patate douce": {
         "qty": 300,
@@ -7222,7 +7222,7 @@
   {
     "name": "Curry aux épinards et aux patates douces",
     "link": "https://www.hellofresh.fr/recipes/curry-aux-epinards-et-aux-patates-douces-5e5f567195d95b221a29ff6c",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Riz": {
         "qty": 85,
@@ -7298,7 +7298,7 @@
   {
     "name": "Curry de courgettes & coco à l'indienne",
     "link": "https://www.hellofresh.fr/recipes/curry-de-courgettes-and-coco-a-lindienne-64073c7d9c6d10cd16eab6d0",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -7366,7 +7366,7 @@
   {
     "name": "Korma indien de courgette & de chou-fleur",
     "link": "https://www.hellofresh.fr/recipes/korma-indien-de-courgette-and-de-chou-fleur-62e9356687b2d7f02f0f0b11",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Pommes de terre": {
         "qty": 200,
@@ -7446,7 +7446,7 @@
   {
     "name": "Crumble de légumes au pecorino & à l'origan",
     "link": "https://www.hellofresh.fr/recipes/crumble-de-legumes-au-pecorino-and-a-lorigan-5f1709fcde250531735d7eb1",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Courgette": {
         "qty": 1,
@@ -7538,7 +7538,7 @@
   {
     "name": "Crumble au potimarron & pecorino",
     "link": "https://www.hellofresh.fr/recipes/crumble-au-potimarron-and-pecorino-63bd57e9e9fa190ed6078290",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -7618,7 +7618,7 @@
   {
     "name": "Crumble poireau, noix de pécan & pecorino",
     "link": "https://www.hellofresh.fr/recipes/crumble-poireau-noix-de-pecan-and-pecorino-618151d6a611b50e063c096f",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Échalote": {
         "qty": 1,
@@ -7710,7 +7710,7 @@
   {
     "name": "Poivron farci végétarien",
     "link": "https://www.hellofresh.fr/recipes/poivron-farci-vegetarien-64073eb3683721c9a32b08ab",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -7782,7 +7782,7 @@
   {
     "name": "Moussaka veggie & pain à l'ail",
     "link": "https://www.hellofresh.fr/recipes/moussaka-veggie-and-pain-a-lail-60102a7c70886f04bd471e92",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Aubergine": {
         "qty": 1,
@@ -7870,7 +7870,7 @@
   {
     "name": "Écrasé de topinambours & fromage grillé",
     "link": "https://www.hellofresh.fr/recipes/ecrase-de-topinambours-and-fromage-grille-6357ca26d0ffaf88b001ecc4",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Pommes de terre": {
         "qty": 500,
@@ -7934,7 +7934,7 @@
   {
     "name": "Soupe thaï aux nouilles de riz & citronnelle",
     "link": "https://www.hellofresh.fr/recipes/soupe-thai-aux-nouilles-de-riz-and-citronnelle-621f8adbd67d1b4430463fc7",
-    "category": "pâtes végé",
+    "category": "🍝 pâtes végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -8014,7 +8014,7 @@
   {
     "name": "Poulet & sauce blanche à l'aneth",
     "link": "https://www.hellofresh.fr/recipes/poulet-and-sauce-blanche-a-laneth-64073faddf6297bb5beef2f0",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Carotte": {
         "qty": 2,
@@ -8094,7 +8094,7 @@
   {
     "name": "Filet de poulet sauce à la crème et moutarde",
     "link": "https://www.hellofresh.fr/recipes/filet-de-poulet-sauce-a-la-creme-et-moutarde-5e8ddf8986eaff647a6b3362",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Pommes de terre à chair ferme": {
         "qty": 400,
@@ -8166,7 +8166,7 @@
   {
     "name": "Filet de poulet à la forestière",
     "link": "https://www.hellofresh.fr/recipes/filet-de-poulet-a-la-forestiere-64073cf29c6d10cd16eab707",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Grenailles rouges": {
         "qty": 400,
@@ -8238,7 +8238,7 @@
   {
     "name": "Waterzooi à la Gantoise",
     "link": "https://www.hellofresh.fr/recipes/waterzooi-a-la-gantoise-5d19d700fca63a001a56020b",
-    "category": "soupe",
+    "category": "🍜 soupe",
     "ingredients": {
       "Filet de poulet": {
         "qty": 200,
@@ -8314,7 +8314,7 @@
   {
     "name": "Escalope de dinde à la milanaise & spaghetti",
     "link": "https://www.hellofresh.fr/recipes/escalope-de-dinde-a-la-milanaise-and-spaghetti-61ddad8bcef6e7460138d1ef",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 2,
@@ -8394,7 +8394,7 @@
   {
     "name": "Poulet parmigiana en sauce tomate",
     "link": "https://www.hellofresh.fr/recipes/poulet-parmigiana-en-sauce-tomate-6357c4e2480dc311ac0bbce5",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 2,
@@ -8482,7 +8482,7 @@
   {
     "name": "Spaghetti au poulet & légumes poêlés",
     "link": "https://www.hellofresh.fr/recipes/spaghetti-au-poulet-and-legumes-poeles-62ea5ad1452f066f830facec",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -8542,7 +8542,7 @@
   {
     "name": "Saltimbocca de dinde",
     "link": "https://www.hellofresh.fr/recipes/saltimbocca-de-dinde-61000ce1556dd9651d24ec37",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Spaghetti": {
         "qty": 180,
@@ -8602,7 +8602,7 @@
   {
     "name": "Casarecce au poulet à la crème & épinards",
     "link": "https://www.hellofresh.fr/recipes/casarecce-au-poulet-a-la-creme-and-epinards-6283b6fa6fb45aad8502f815",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -8666,7 +8666,7 @@
   {
     "name": "One pot de penne, poulet & crème de gouda",
     "link": "https://www.hellofresh.fr/recipes/one-pot-de-penne-poulet-and-creme-de-gouda-64fb2d47786cce2df0e015bd",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -8730,7 +8730,7 @@
   {
     "name": "Blanquette de poulet réconfortante",
     "link": "https://www.hellofresh.fr/recipes/blanquette-de-poulet-reconfortante-63f492cd38856479f90966df",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -8802,7 +8802,7 @@
   {
     "name": "Poulet à la crème de poireau & muscade",
     "link": "https://www.hellofresh.fr/recipes/poulet-a-la-creme-de-poireau-and-muscade-64073f3b683721c9a32b08df",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Poireau": {
         "qty": 1,
@@ -8862,7 +8862,7 @@
   {
     "name": "Filet de dinde & chutney pomme-thym maison",
     "link": "https://www.hellofresh.fr/recipes/filet-de-dinde-and-chutney-pomme-thym-maison-672155794251e0dbe4be849d",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Pomme": {
         "qty": 1,
@@ -8938,7 +8938,7 @@
   {
     "name": "Filet de poulet & sauce forestière",
     "link": "https://www.hellofresh.fr/recipes/filet-de-poulet-and-sauce-forestiere-6050ac7e49441001180c2871",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Champignon": {
         "qty": 250,
@@ -8994,7 +8994,7 @@
   {
     "name": "Poulet tikka masala & Riz",
     "link": "https://www.hellofresh.fr/recipes/poulet-tikka-masala-and-riz-basmati-605a0b726fda944be203fc3f",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 3,
@@ -9082,7 +9082,7 @@
   {
     "name": "Mafé revisité au poulet & carotte",
     "link": "https://www.hellofresh.fr/recipes/mafe-revisite-au-poulet-and-carotte-64073d979c6d10cd16eab751",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Riz": {
         "qty": 135,
@@ -9158,7 +9158,7 @@
   {
     "name": "Le Végé : Émincés veggie façon mafé & poivron",
     "link": "https://www.hellofresh.fr/recipes/eminces-vegetariens-facon-mafe-and-poivron-65dca22eaf98375703349c27",
-    "category": "végé",
+    "category": "🥕 végé",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -9234,7 +9234,7 @@
   {
     "name": "Soupe réconfortante au poulet & couscous perlé",
     "link": "https://www.hellofresh.fr/recipes/soupe-reconfortante-au-poulet-and-couscous-perle-6716568c2afd696502ede06e",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 2,
@@ -9310,7 +9310,7 @@
   {
     "name": "Mijoté de poulet sucré-salé aux amandes",
     "link": "https://www.hellofresh.fr/recipes/mijote-de-poulet-sucre-sale-aux-amandes-656de22f02bcfeab65561943",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Mélange d'épices du Moyen-Orient": {
         "qty": 1,
@@ -9386,7 +9386,7 @@
   {
     "name": "Poulet au miel & semoule à la marocaine",
     "link": "https://www.hellofresh.fr/recipes/poulet-marocain-sucre-sale-au-miel-64fb2dcd786cce2df0e019b0",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Patate douce": {
         "qty": 1,
@@ -9462,7 +9462,7 @@
   {
     "name": "Carré de porc & nectarines grillées au thym",
     "link": "https://www.hellofresh.fr/recipes/carre-de-porc-and-nectarines-roties-67586de38e49d3d7ba0b4867",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Poivron": {
         "qty": 1,
@@ -9522,7 +9522,7 @@
   {
     "name": "Poulet mariné façon chich taouk",
     "link": "https://www.hellofresh.fr/recipes/poulet-facon-chich-taouk-64fb2da871b62ce128342471",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -9598,7 +9598,7 @@
   {
     "name": "Poulet à l'orientale, freekeh et sauce tahini",
     "link": "https://www.hellofresh.fr/recipes/poulet-a-lorientale-freekeh-et-sauce-tahini-6075bdff35882053336babc9",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Échalote": {
         "qty": 1,
@@ -9666,7 +9666,7 @@
   {
     "name": "Salade de poulet, sucrine & cranberries",
     "link": "https://www.hellofresh.fr/recipes/salade-de-poulet-sucrine-and-cranberries-638f69054552b52b3f0b9e9d",
-    "category": "salade",
+    "category": "🥬 salade",
     "ingredients": {
       "Petit pain": {
         "qty": 1,
@@ -9730,7 +9730,7 @@
   {
     "name": "Avocado wraps au poulet & sauce crème épicée",
     "link": "https://www.hellofresh.fr/recipes/avocado-wraps-au-poulet-and-sauce-creme-epicee-64073fc7683721c9a32b0909",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Oignon rouge": {
         "qty": 1,
@@ -9798,7 +9798,7 @@
   {
     "name": "Poulet sauce satay à l'indonésienne",
     "link": "https://www.hellofresh.fr/recipes/poulet-sauce-satay-a-lindonesienne-63bd6b7f8922fa59a00876a4",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Concombre": {
         "qty": 1,
@@ -9870,7 +9870,7 @@
   {
     "name": "Poulet thaï au curry vert & lait de coco",
     "link": "https://www.hellofresh.fr/recipes/poulet-thai-au-curry-vert-and-lait-de-coco-60196dd81d542c1548043bb9",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -9942,7 +9942,7 @@
   {
     "name": "Poulet thaï au curry vert & lait de coco",
     "link": "https://www.hellofresh.fr/recipes/poulet-thai-au-curry-vert-and-lait-de-coco-64fb2d29786cce2df0e0150c",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Échalote": {
         "qty": 1,
@@ -10014,7 +10014,7 @@
   {
     "name": "Blanc de poulet façon teriyaki",
     "link": "https://www.hellofresh.fr/recipes/aiguillettes-de-poulet-facon-teriyaki-64d3b20ec6d2a3702a70fd91",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Riz": {
         "qty": 135,
@@ -10086,7 +10086,7 @@
   {
     "name": "Udon au poulet épicé & bouillon coco",
     "link": "https://www.hellofresh.fr/recipes/udon-au-poulet-epice-and-bouillon-coco-67093aeed1dd98c148b059ce",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gingembre frais": {
         "qty": 1,
@@ -10154,7 +10154,7 @@
   {
     "name": "Nouilles udon sautées au poulet",
     "link": "https://www.hellofresh.fr/recipes/nouilles-udon-sautees-au-poulet-6294dd332e493e1fee012113",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Oignon nouveau": {
         "qty": 3.2,
@@ -10214,7 +10214,7 @@
   {
     "name": "Nouilles udon sautées au poulet",
     "link": "https://www.hellofresh.fr/recipes/nouilles-udon-sautees-au-poulet-64fb2ced71b62ce128341f43",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Oignon nouveau": {
         "qty": 0.66,
@@ -10274,7 +10274,7 @@
   {
     "name": "Wok de nouilles au poulet & noix de cajou",
     "link": "https://www.hellofresh.fr/recipes/wok-de-nouilles-au-poulet-and-noix-de-cajou-60352d8e1f7f871ca154211b",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -10342,7 +10342,7 @@
   {
     "name": "Wok de nouilles au poulet & légumes sautés",
     "link": "https://www.hellofresh.fr/recipes/wok-de-nouilles-au-poulet-and-legumes-sautes-661ed040019ddbd535c04808",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -10406,7 +10406,7 @@
   {
     "name": "Salade aromatique de nouilles au poulet",
     "link": "https://www.hellofresh.fr/recipes/salade-aromatique-de-nouilles-au-poulet-63eb6b707f1abd5e5200fa1a",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Nouilles de blé": {
         "qty": 100,
@@ -10490,7 +10490,7 @@
   {
     "name": "Pad see ew : nouilles de riz sautées à la thaï",
     "link": "https://www.hellofresh.fr/recipes/pad-see-ew-nouilles-de-riz-sautees-a-la-thai-63a08f66eae25c78e80389cc",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -10558,7 +10558,7 @@
   {
     "name": "Salade asiatique froide au poulet effiloché",
     "link": "https://www.hellofresh.fr/recipes/salade-asiatique-froide-au-poulet-effiloche-6305625d7cbb5f74a4070d57",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Filet de poulet": {
         "qty": 200,
@@ -10634,7 +10634,7 @@
   {
     "name": "Assiette shawarma poulet & sauce labneh",
     "link": "https://www.hellofresh.fr/recipes/assiette-shawarma-poulet-and-sauce-labneh-62e11126293bf761b401ee18",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -10698,7 +10698,7 @@
   {
     "name": "Curry thaï de dinde & patate douce",
     "link": "https://www.hellofresh.fr/recipes/mijote-de-dinde-au-curry-thai-and-patate-douce-650c4655d19550681e3ba6be",
-    "category": "poulet",
+    "category": "🍗 poulet",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -10766,7 +10766,7 @@
   {
     "name": "Linguine all'Amatriciana",
     "link": "https://www.hellofresh.fr/recipes/linguine-allamatriciana-5ed8ae9697bb3a5e4c4a5764",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Oignon rouge": {
         "qty": 1,
@@ -10830,7 +10830,7 @@
   {
     "name": "Spaghetti aux poireaux & lardons",
     "link": "https://www.hellofresh.fr/recipes/spaghetti-aux-poireaux-and-lardons-5ec4f8c2396a614ee146c789",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Poireau": {
         "qty": 1,
@@ -10882,7 +10882,7 @@
   {
     "name": "Linguine aux lardons & champignons",
     "link": "https://www.hellofresh.fr/recipes/linguine-aux-lardons-and-champignons-60db181a9dc9985484394f51",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -10950,7 +10950,7 @@
   {
     "name": "Salade de farfalle au lard & sauce ciboulette",
     "link": "https://www.hellofresh.fr/recipes/salade-de-farfalle-au-lard-and-sauce-ciboulette-614094b9e406ec2ce45c2bcf",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 2,
@@ -11010,7 +11010,7 @@
   {
     "name": "Spaghetti aux lardons & courgette",
     "link": "https://www.hellofresh.fr/recipes/spaghetti-aux-lardons-and-courgette-6294dec69be7c12bcd056d42",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Spaghetti": {
         "qty": 180,
@@ -11066,7 +11066,7 @@
   {
     "name": "Udon façon carbo-miso",
     "link": "https://www.hellofresh.fr/recipes/udon-facon-carbo-miso-630562d3e4b9ae756b006df2",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Oignon nouveau": {
         "qty": 1.2,
@@ -11122,7 +11122,7 @@
   {
     "name": "Nouilles au porc & miso façon mazemen",
     "link": "https://www.hellofresh.fr/recipes/nouilles-au-porc-and-miso-facon-mazemen-63f4a2096880bea2be0fed96",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -11190,7 +11190,7 @@
   {
     "name": "Porc au caramel vietnamien & riz",
     "link": "https://www.hellofresh.fr/recipes/porc-au-caramel-vietnamien-and-riz-61d45d4baba6a90c9d343c5e",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Coriandre": {
         "qty": 2.5,
@@ -11258,7 +11258,7 @@
   {
     "name": "Bai sach chrouk : porc au coco & à l'ail",
     "link": "https://www.hellofresh.fr/recipes/bai-sach-chrouk-porc-au-coco-and-a-lail-5ffdbe17415b08766c022b93",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -11342,7 +11342,7 @@
   {
     "name": "Porc épicé à la mexicaine & riz au curcuma",
     "link": "https://www.hellofresh.fr/recipes/tacos-bowl-au-porc-hache-652d458d6720825b47fd8ad6",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -11414,7 +11414,7 @@
   {
     "name": "Baos au porc & sauce asiatique sucrée",
     "link": "https://www.hellofresh.fr/recipes/bao-au-porc-and-sauce-asiatique-sucree-64fb2e0532e9107c6db8893d",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Patate douce": {
         "qty": 1,
@@ -11486,7 +11486,7 @@
   {
     "name": "Risotto aux poireaux & lardons",
     "link": "https://www.hellofresh.fr/recipes/risotto-aux-poireaux-and-lardons-63184c96252de97ba003d290",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Lardons": {
         "qty": 100,
@@ -11546,7 +11546,7 @@
   {
     "name": "Croque montagnard tomme-jambon",
     "link": "https://www.hellofresh.fr/recipes/croque-montagnard-tomme-jambon-64b01657b22c4a8c5919b316",
-    "category": "craquage",
+    "category": "🎉 craquage",
     "ingredients": {
       "Jambon blanc": {
         "qty": 2,
@@ -11610,7 +11610,7 @@
   {
     "name": "Cordon bleu maison & purée au thym",
     "link": "https://www.hellofresh.fr/recipes/cordon-bleu-maison-and-puree-au-thym-5f2a77eac1f0954e95478173",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Filet de poulet": {
         "qty": 200,
@@ -11678,7 +11678,7 @@
   {
     "name": "Filet mignon et jus de viande maison",
     "link": "https://www.hellofresh.fr/recipes/filet-mignon-et-jus-de-viande-maison-5e8ddf948a37d5756435d632",
-    "category": "porc",
+    "category": "🍖 porc",
     "ingredients": {
       "Moutarde": {
         "qty": 1,
@@ -11738,7 +11738,7 @@
   {
     "name": "Penne & bœuf haché aux saveurs mexicaines",
     "link": "https://www.hellofresh.fr/recipes/penne-and-boeuf-hache-aux-saveurs-mexicaines-62e0fdb29b1c0d40480a915b",
-    "category": "boeuf haché",
+    "category": "🌮 boeuf haché",
     "ingredients": {
       "Bœuf haché": {
         "qty": 200,
@@ -11798,7 +11798,7 @@
   {
     "name": "Penne au bœuf haché, crème & portobellos",
     "link": "https://www.hellofresh.fr/recipes/penne-au-boeuf-hache-creme-and-portobellos-65f1d655d4f950689014c719",
-    "category": "boeuf haché",
+    "category": "🌮 boeuf haché",
     "ingredients": {
       "Penne": {
         "qty": 180,
@@ -11862,7 +11862,7 @@
   {
     "name": "Penne ragù al forno",
     "link": "https://www.hellofresh.fr/recipes/penne-ragu-al-forno-61b8aa43753fcf40e91b70db",
-    "category": "boeuf haché",
+    "category": "🌮 boeuf haché",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -11926,7 +11926,7 @@
   {
     "name": "Ragù bianco de bœuf & champignons à la crème",
     "link": "https://www.hellofresh.fr/recipes/ragu-bianco-de-boeuf-and-champignons-a-la-creme-61f036d2fd8a055a96724a68",
-    "category": "boeuf haché",
+    "category": "🌮 boeuf haché",
     "ingredients": {
       "Poireau": {
         "qty": 1,
@@ -11990,7 +11990,7 @@
   {
     "name": "Spaghetti & polpette de bœuf",
     "link": "https://www.hellofresh.fr/recipes/spaghetti-sauce-tomate-and-boulettes-de-boeuf-64fb2e1032e9107c6db88991",
-    "category": "boeuf haché",
+    "category": "🌮 boeuf haché",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -12046,7 +12046,7 @@
   {
     "name": "Rigatoni au confit de canard",
     "link": "https://www.hellofresh.fr/recipes/rigatoni-au-confit-de-canard-618a6effbf4792051764f61e",
-    "category": "canard",
+    "category": "🦆 canard",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -12106,7 +12106,7 @@
   {
     "name": "Orzo au bœuf haché épicé & fromage italien",
     "link": "https://www.hellofresh.fr/recipes/orzo-au-boeuf-hache-epice-and-fromage-italien-61f9442e24ebc0620b24f37c",
-    "category": "boeuf haché",
+    "category": "🌮 boeuf haché",
     "ingredients": {
       "Piment": {
         "qty": 0.25,
@@ -12186,7 +12186,7 @@
   {
     "name": "Nouilles sautées au bœuf haché",
     "link": "https://www.hellofresh.fr/recipes/nouilles-sautees-au-boeuf-hache-60e45d1831c0d837ec388c5e",
-    "category": "boeuf haché",
+    "category": "🌮 boeuf haché",
     "ingredients": {
       "Nouilles de blé": {
         "qty": 200,
@@ -12258,7 +12258,7 @@
   {
     "name": "Nouilles au bœuf sauté à la thaï",
     "link": "https://www.hellofresh.fr/recipes/nouilles-au-boeuf-saute-a-la-thai-62bb06b54bc0527b6403986a",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Nouilles de blé": {
         "qty": 200,
@@ -12330,7 +12330,7 @@
   {
     "name": "Wok de nouilles sautées au bœuf mariné",
     "link": "https://www.hellofresh.fr/recipes/wok-de-nouilles-sautees-au-boeuf-marine-609103d404d30c1b2a360838",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -12394,7 +12394,7 @@
   {
     "name": "Nouilles épicées au bœuf façon Dan Dan",
     "link": "https://www.hellofresh.fr/recipes/nouilles-epicees-au-boeuf-facon-dan-dan-64073ce5df6297bb5beef1f1",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -12470,7 +12470,7 @@
   {
     "name": "Udon au bœuf haché sauce curry coco",
     "link": "https://www.hellofresh.fr/recipes/udon-au-boeuf-hache-sauce-curry-coco-65085d4253d80a03621137e0",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -12542,7 +12542,7 @@
   {
     "name": "Bò bún vietnamien au bœuf sauté",
     "link": "https://www.hellofresh.fr/recipes/bo-bun-vietnamien-au-boeuf-saute-5fa1796190e7a01fbe2ac554",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 2.5,
@@ -12634,7 +12634,7 @@
   {
     "name": "Gyudon : bol de riz au bœuf et oignons",
     "link": "https://www.hellofresh.fr/recipes/gyudon-bol-de-riz-au-boeuf-et-oignons-60db193d03cbf73ae2066aae",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -12698,7 +12698,7 @@
   {
     "name": "Bowl de bœuf & légumes à la japonaise",
     "link": "https://www.hellofresh.fr/recipes/bowl-de-boeuf-and-legumes-a-la-japonaise-63bd5210500ab730aa09fd30",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Riz": {
         "qty": 150,
@@ -12774,7 +12774,7 @@
   {
     "name": "Chaussons au bœuf façon empanadas argentines",
     "link": "https://www.hellofresh.fr/recipes/chaussons-au-boeuf-facon-empanadas-argentines-63341fc125fbfb301b0f1bee",
-    "category": "boeuf haché",
+    "category": "🌮 boeuf haché",
     "ingredients": {
       "Oignon rouge": {
         "qty": 1,
@@ -12854,7 +12854,7 @@
   {
     "name": "Quesadillas mexicaines bœuf & cheddar",
     "link": "https://www.hellofresh.fr/recipes/quesadillas-mexicaines-boeuf-and-cheddar-627bb40aeb841bbd0800070e",
-    "category": "boeuf haché",
+    "category": "🌮 boeuf haché",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -12922,7 +12922,7 @@
   {
     "name": "Tajine de kefta au bœuf & semoule",
     "link": "https://www.hellofresh.fr/recipes/tajine-de-kefta-au-boeuf-65cb248e5d0250930594559c",
-    "category": "boeuf haché",
+    "category": "🌮 boeuf haché",
     "ingredients": {
       "Semoule": {
         "qty": 150,
@@ -12994,7 +12994,7 @@
   {
     "name": "Pavé de bœuf sauce Bercy & linguine",
     "link": "https://www.hellofresh.fr/recipes/pave-de-boeuf-sauce-bercy-and-linguine-6149e9feddb1012b034b1886",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 3,
@@ -13066,7 +13066,7 @@
   {
     "name": "Bavette sauce à l'échalote & frites",
     "link": "https://www.hellofresh.fr/recipes/bavette-sauce-a-lechalote-and-frites-5f32c8b20e83ec2d597523d6",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Grenailles rouges": {
         "qty": 400,
@@ -13134,7 +13134,7 @@
   {
     "name": "Pavé de bœuf sauce au poivre maison",
     "link": "https://www.hellofresh.fr/recipes/pave-de-boeuf-sauce-au-poivre-maison-61d45dbe9e37b94fc55fb1b5",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Rumsteak": {
         "qty": 200,
@@ -13194,7 +13194,7 @@
   {
     "name": "Pavé de rumsteck & sauce au poivre",
     "link": "https://www.hellofresh.fr/recipes/pave-de-rumsteck-and-sauce-au-poivre-5faacc1330df84123c7d8dcc",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Courge butternut": {
         "qty": 1,
@@ -13274,7 +13274,7 @@
   {
     "name": "Bœuf piquant sauté façon lomo saltado",
     "link": "https://www.hellofresh.fr/recipes/boeuf-piquant-saute-facon-lomo-saltado-629e06b97c0688c80809a518",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Oignon rouge": {
         "qty": 1,
@@ -13342,7 +13342,7 @@
   {
     "name": "Burger de boeuf au cantal & chutney d'oignon",
     "link": "https://www.hellofresh.fr/recipes/burger-de-boeuf-au-cantal-and-chutney-doignon-5def7605efb4ac07c2742db5",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Pommes de terre à chair ferme": {
         "qty": 500,
@@ -13418,7 +13418,7 @@
   {
     "name": "Paupiette de veau & linguine façon Romanoff",
     "link": "https://www.hellofresh.fr/recipes/filet-mignon-de-porc-and-linguine-alla-vodka-66f56b36da53878e13e428cf",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -13490,7 +13490,7 @@
   {
     "name": "Paupiette de veau au four & sauce prunes",
     "link": "https://www.hellofresh.fr/recipes/paupiette-de-veau-rotie-and-sauce-prune-65e5eabc762a70483e9da6cf",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Paupiette de veau": {
         "qty": 2,
@@ -13554,7 +13554,7 @@
   {
     "name": "Filet de canette sauce échalote & carottes Vichy",
     "link": "https://www.hellofresh.fr/recipes/filet-de-canette-sauce-echalote-and-carottes-vichy-61a6361b74d13c637614a553",
-    "category": "canard",
+    "category": "🦆 canard",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 2,
@@ -13622,7 +13622,7 @@
   {
     "name": "Filet de canard & butternut rôti",
     "link": "https://www.hellofresh.fr/recipes/filet-de-canette-and-butternut-roti-6140b3e17a00146b507be37d",
-    "category": "canard",
+    "category": "🦆 canard",
     "ingredients": {
       "Courge butternut": {
         "qty": 300,
@@ -13678,7 +13678,7 @@
   {
     "name": "Salade de nouilles & canette à l'asiatique",
     "link": "https://www.hellofresh.fr/recipes/salade-de-nouilles-and-de-canard-a-lasiatique-64fb2ce9786cce2df0e01394",
-    "category": "canard",
+    "category": "🦆 canard",
     "ingredients": {
       "Gingembre frais": {
         "qty": 1,
@@ -13758,7 +13758,7 @@
   {
     "name": "Canette & sauce sucrée-salée à la marocaine",
     "link": "https://www.hellofresh.fr/recipes/canette-et-sauce-sucree-salee-aux-epices-64fb2da332e9107c6db8873d",
-    "category": "canard",
+    "category": "🦆 canard",
     "ingredients": {
       "Oignon": {
         "qty": 2,
@@ -13818,7 +13818,7 @@
   {
     "name": "Gratin dauphinois & filet de canard",
     "link": "https://www.hellofresh.fr/recipes/gratin-dauphinois-and-filet-de-canard-62286105d33fa1304632cc4a",
-    "category": "canard",
+    "category": "🦆 canard",
     "ingredients": {
       "Grenailles rouges": {
         "qty": 400,
@@ -13882,7 +13882,7 @@
   {
     "name": "Hachis parmentier au canard de Mamie Odette",
     "link": "https://www.hellofresh.fr/recipes/hachis-parmentier-au-canard-de-mamie-odette-6022a6d5129e9a4fe17c7158",
-    "category": "canard",
+    "category": "🦆 canard",
     "ingredients": {
       "Grenailles rouges": {
         "qty": 500,
@@ -13970,7 +13970,7 @@
   {
     "name": "Curry rouge thaï épicé de saumon",
     "link": "https://www.hellofresh.fr/recipes/curry-rouge-thai-epice-de-saumon-62431480fb32f57983767a72",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Riz": {
         "qty": 120,
@@ -14038,7 +14038,7 @@
   {
     "name": "Blanquette de saumon & riz pilaf",
     "link": "https://www.hellofresh.fr/recipes/blanquette-de-saumon-and-riz-pilaf-61e6d519ad6b361fb814e018",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -14110,7 +14110,7 @@
   {
     "name": "Pavé de saumon et sauce orientale",
     "link": "https://www.hellofresh.fr/recipes/pave-de-saumon-et-sauce-orientale-5c5dab16e3f3397d1b232e52",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 2,
@@ -14166,7 +14166,7 @@
   {
     "name": "Saumon grillé en croûte de sésame & courgette",
     "link": "https://www.hellofresh.fr/recipes/saumon-grille-en-croute-de-sesame-and-courgette-65806e6b16590f43e9699e54",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Riz": {
         "qty": 150,
@@ -14234,7 +14234,7 @@
   {
     "name": "Orzo au saumon, sauce ail, citron & persil",
     "link": "http://hellofresh.fr/recipes/orzo-au-saumon-sauce-ail-citron-and-persil-640740059c6d10cd16eab82c",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 2,
@@ -14302,7 +14302,7 @@
   {
     "name": "Poêlée de lentilles au saumon & brocoli",
     "link": "https://www.hellofresh.fr/recipes/poelee-de-lentilles-au-saumon-and-brocoli-60d331bc9f02c54a88316c42",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Saumon": {
         "qty": 2,
@@ -14374,7 +14374,7 @@
   {
     "name": "Filet de saumon poêlé et mayonnaise à l’aneth",
     "link": "https://www.hellofresh.fr/recipes/filet-de-saumon-poele-et-mayonnaise-a-laneth-5c4069c9c445fa3c2822fbd2",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Pommes de terre à chair ferme": {
         "qty": 400,
@@ -14434,7 +14434,7 @@
   {
     "name": "Saumon, poireau fondant & crème d'aneth",
     "link": "https://www.hellofresh.fr/recipes/saumon-poireaux-fondants-and-pommes-de-terre-roties-65648f285234ba85b73be53a",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Pommes de terre": {
         "qty": 500,
@@ -14494,7 +14494,7 @@
   {
     "name": "Saumon citronné & purée",
     "link": "https://www.hellofresh.fr/recipes/saumon-citronne-and-puree-62e116862b6b8184f40ad14c",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Grenailles rouges": {
         "qty": 400,
@@ -14550,7 +14550,7 @@
   {
     "name": "Saumon, sauce cacahuètes & wok de légumes",
     "link": "https://www.hellofresh.fr/recipes/saumon-sauce-cacahuetes-and-wok-de-legumes-6140b3b60749245fe36a5ac2",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 2,
@@ -14622,7 +14622,7 @@
   {
     "name": "Saumon sauce à l'estragon & grenailles",
     "link": "https://www.hellofresh.fr/recipes/saumon-sauce-a-lestragon-and-grenailles-64fb2dd171b62ce128342552",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Grenailles": {
         "qty": 500,
@@ -14686,7 +14686,7 @@
   {
     "name": "Salade de lentilles, saumon fumé et roquette",
     "link": "https://www.hellofresh.fr/recipes/salade-de-lentilles-saumon-fume-et-roquette-618aa8f0b6085c052f17c0e2",
-    "category": "saumon",
+    "category": "🍣 saumon",
     "ingredients": {
       "Carotte": {
         "qty": 1,
@@ -14750,7 +14750,7 @@
   {
     "name": "Curry de lieu & lait de coco",
     "link": "https://www.hellofresh.fr/recipes/curry-de-lieu-and-lait-de-coco-62b25dbe32b00ff96707065b",
-    "category": "poisson blanc",
+    "category": "🐟 poisson blanc",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -14818,7 +14818,7 @@
   {
     "name": "Curry de lieu & lait de coco façon Moqueca",
     "link": "https://www.hellofresh.fr/recipes/curry-de-lieu-and-lait-de-coco-facon-moqueca-63c6f9f210a842ff100c0cf5",
-    "category": "poisson blanc",
+    "category": "🐟 poisson blanc",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -14886,7 +14886,7 @@
   {
     "name": "Linguine à la crème d'aneth & poisson au curry",
     "link": "https://www.hellofresh.fr/recipes/linguine-a-la-creme-daneth-and-poisson-au-curry-658069cebd1df37bfc868696",
-    "category": "poisson blanc",
+    "category": "🐟 poisson blanc",
     "ingredients": {
       "Linguine": {
         "qty": 180,
@@ -14958,7 +14958,7 @@
   {
     "name": "Lieu à la meunière & tombée d'épinards",
     "link": "https://www.hellofresh.fr/recipes/lieu-a-la-meuniere-and-tombee-depinards-5f0f1865b68c534acb77bd3a",
-    "category": "poisson blanc",
+    "category": "🐟 poisson blanc",
     "ingredients": {
       "Carotte": {
         "qty": 2,
@@ -15030,7 +15030,7 @@
   {
     "name": "Lieu noir tikka masala & poireau",
     "link": "https://www.hellofresh.fr/recipes/lieu-noir-tikka-masala-and-poireau-621506dd7b73f835462a040b",
-    "category": "poisson blanc",
+    "category": "🐟 poisson blanc",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -15106,7 +15106,7 @@
   {
     "name": "Filet d'églefin sauce aux câpres & citron vert",
     "link": "https://www.hellofresh.fr/recipes/filet-deglefin-sauce-aux-capres-and-citron-vert-5f8ec9de98ecf4455b27d635",
-    "category": "poisson blanc",
+    "category": "🐟 poisson blanc",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -15186,7 +15186,7 @@
   {
     "name": "Filet d'églefin poêlé et lentilles cuisinées",
     "link": "https://www.hellofresh.fr/recipes/filet-deglefin-poele-et-lentilles-cuisinees-5ece91df30017a717f796926",
-    "category": "poisson blanc",
+    "category": "🐟 poisson blanc",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -15242,7 +15242,7 @@
   {
     "name": "Filet d'églefin et sauce ciboulette",
     "link": "https://www.hellofresh.fr/recipes/filet-deglefin-et-sauce-ciboulette-5e4cf7f5eb292a04614e5efd",
-    "category": "poisson blanc",
+    "category": "🐟 poisson blanc",
     "ingredients": {
       "Carotte": {
         "qty": 500,
@@ -15294,7 +15294,7 @@
   {
     "name": "Filet de perche du nil poêlé et risotto d'orzo",
     "link": "https://www.hellofresh.fr/recipes/filet-de-perche-du-nil-poele-et-risotto-dorzo-5ed8aed1b9e3de00986f2147",
-    "category": "poisson blanc",
+    "category": "🐟 poisson blanc",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -15362,7 +15362,7 @@
   {
     "name": "Lieu noir tikka masala & poireau",
     "link": "https://www.hellofresh.fr/recipes/lieu-noir-tikka-masala-and-poireau-612f7ea11fd550178b66357a",
-    "category": "poisson blanc",
+    "category": "🐟 poisson blanc",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 3,
@@ -15442,7 +15442,7 @@
   {
     "name": "Moqueca brésilienne au cabillaud",
     "link": "https://www.hellofresh.fr/recipes/moqueca-bresilienne-au-cabillaud-6255d8a5fe81f0226b424a5a",
-    "category": "poisson blanc",
+    "category": "🐟 poisson blanc",
     "ingredients": {
       "Riz": {
         "qty": 135,
@@ -15518,7 +15518,7 @@
   {
     "name": "Couscous perlé, crevettes et courgette",
     "link": "https://www.hellofresh.fr/recipes/couscous-perle-crevettes-et-courgette-5bceef3030006c2ac147e7d2",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Oignon rouge": {
         "qty": 1,
@@ -15586,7 +15586,7 @@
   {
     "name": "Lentilles corail & crevettes au curry",
     "link": "https://www.hellofresh.fr/recipes/lentilles-corail-and-crevettes-au-curry-64074039683721c9a32b092c",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Lentilles corail": {
         "qty": 125,
@@ -15658,7 +15658,7 @@
   {
     "name": "Couscous perlé aux crevettes sautées & piment rouge",
     "link": "https://www.hellofresh.fr/recipes/couscous-perle-aux-crevettes-sautees-and-piment-rouge-5f32c85905ba4513506b115b",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Oignon rouge": {
         "qty": 1,
@@ -15726,7 +15726,7 @@
   {
     "name": "Salade d'orzo & crevettes au curry",
     "link": "https://www.hellofresh.fr/recipes/salade-dorzo-and-crevettes-au-curry-60acfaffe51efd65637e880f",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Orzo": {
         "qty": 145,
@@ -15810,7 +15810,7 @@
   {
     "name": "Orzo & crevettes sauce ail, citron & persil",
     "link": "https://www.hellofresh.fr/recipes/orzo-and-crevettes-sauce-ail-citron-and-persil-62666cf7d36e63ae840fae24",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 2,
@@ -15886,7 +15886,7 @@
   {
     "name": "Poêlée de crevettes piri-piri & légumes d'été",
     "link": "https://www.hellofresh.fr/recipes/poelee-de-crevettes-au-piri-piri-and-legumes-dete-65ddb6919a647d3c9d37002f",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -15954,7 +15954,7 @@
   {
     "name": "Crevettes sautées au miel & gingembre",
     "link": "https://www.hellofresh.fr/recipes/crevettes-sautees-au-miel-and-gingembre-62c32928e29cbc554d0ef44e",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -16014,7 +16014,7 @@
   {
     "name": "Riz sauté chinois aux crevettes & champignons",
     "link": "https://www.hellofresh.fr/recipes/riz-saute-chinois-aux-crevettes-and-champignons-638f644d846dc06e63080227",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Riz": {
         "qty": 135,
@@ -16078,7 +16078,7 @@
   {
     "name": "Crevettes poêlées & beurre parfumé aux épices",
     "link": "https://www.hellofresh.fr/recipes/crevettes-poelees-and-beurre-parfume-aux-epices-5fe1d4d14e8db00df90bb2a4",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Courgette": {
         "qty": 1,
@@ -16146,7 +16146,7 @@
   {
     "name": "Curry de crevettes au vadouvan",
     "link": "https://www.hellofresh.fr/recipes/curry-de-crevettes-au-vadouvan-5fd8ce994083e0249b5ad5c9",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Gousse d'ail": {
         "qty": 1,
@@ -16218,7 +16218,7 @@
   {
     "name": "Spaghetti aux crevettes et courgette",
     "link": "https://www.hellofresh.fr/recipes/spaghetti-aux-crevettes-et-courgette-60c8aa685c6b094c8b4f005e",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Spaghetti": {
         "qty": 180,
@@ -16270,7 +16270,7 @@
   {
     "name": "Nouilles aux crevettes façon Pad Thaï",
     "link": "https://www.hellofresh.fr/recipes/nouilles-aux-crevettes-facon-pad-thai-603e73ddb2aefb69c221b2c2",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Carotte": {
         "qty": 0.5,
@@ -16362,7 +16362,7 @@
   {
     "name": "Laksa aux crevettes & lait de coco",
     "link": "https://www.hellofresh.fr/recipes/laksa-aux-crevettes-and-lait-de-coco-632060a7b788869acb0c022a",
-    "category": "crevettes",
+    "category": "🦐 crevettes",
     "ingredients": {
       "Citron vert": {
         "qty": 0.5,
@@ -16430,7 +16430,7 @@
   {
     "name": "Bœuf chimichurri & tombée d'épinards",
     "link": "https://www.hellofresh.fr/recipes/boeuf-chimichurri-and-puree-de-patate-douce-64fae7d132e9107c6db86eb3",
-    "category": "boeuf",
+    "category": "🥩 boeuf",
     "ingredients": {
       "Pavé de bœuf mariné": {
         "qty": 200,
