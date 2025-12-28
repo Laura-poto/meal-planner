@@ -95,7 +95,7 @@ if st.button("Générer les courses"):
     else:
         out = engine.compute_courses(DATA_DIR, selection, int(personnes), update_provisions=update_prov)
         st.success("Courses générées.")
-        st.markdown(format_courses(out["liste_courses"]))
+        st.markdown(format_courses(out["liste_courses"]).replace("\n", "  \n"))
         with st.expander("Voir la version JSON (debug)"):
             st.json(out["liste_courses"])
         with st.expander("Voir détails placard (consommation / utilisé)"):
