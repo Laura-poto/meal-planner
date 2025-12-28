@@ -1,66 +1,48 @@
-from __future__ import annotations
-
-import json
+# app.py
 from pathlib import Path
-
 import streamlit as st
+import pandas as pd
 
 import engine
 
+st.set_page_config(page_title="Meal Planner", layout="wide")
+st.title("🍽️ Meal Planner")
 
-APP_DIR = Path(__file__).resolve().parent
-DATA_DIR = APP_DIR / "data"
+DATA_DIR = Path("data")
 
-st.set_page_config(page_title="Meal planner", page_icon="🍽️", layout="wide")
-st.title("🍽️ Meal planner (HelloFresh)")
+# 1) Matching (comme le notebook) — sans aucun paramètre inutile
+match = engine.compute_matching(DATA_DIR)
 
-# --- Chargement des recettes pour proposer une sélection ---
-try:
-    recettes = json.loads((DATA_DIR / "recettes_hellofresh.txt").read_text(encoding="utf-8"))
-    all_names = sorted({r.get("name") for r in recettes if r.get("name")})
-except Exception as e:
-    st.error(f"Impossible de lire data/recettes_hellofresh.txt : {e}")
-    st.stop()
+st.subheader("📊 Matching des recettes (marché / placard)")
+left, right = st.columns([2, 1])
 
-DEFAULT_SELECTION = [
-    "Bowl de boulgour aux légumes rôtis",
-    "Blanquette de poulet réconfortante",
-    "Nouilles sautées au bœuf haché",
-    "Velouté de chou-fleur & parmesan AOP",
-]
+with left:
+    if match["scored_filtered"]:
+        df = pd.DataFrame(match["scored_filtered"])
+        cols = [c for c in ["category","name","score_market","score_pantry","manque_market","manque_pantry","link"] if c in df.columns]
+        st.dataframe(df[cols], use_container_width=True, height=520)
+    else:
+        st.info("Aucune recette ne passe les filtres actuels (MATCH_MIN/MATCH_MIN_PANTRY).")
 
-with st.sidebar:
-    st.header("Paramètres")
-    personnes = st.number_input("Nombre de personnes", min_value=1, max_value=10, value=4, step=1)
-    selection = st.multiselect("Recettes à cuisiner", options=all_names, default=[n for n in DEFAULT_SELECTION if n in all_names])
-    update_provisions = st.checkbox("Mettre à jour le placard (provisions.txt) + générer courses_placard.txt", value=False)
+with right:
+    st.markdown("**Affichage texte (comme le notebook)**")
+    with st.expander("Voir / masquer"):
+        st.code(match["text"], language="text")
+    if match["unknown_ingredients"]:
+        st.warning("Ingrédients non définis dans ingredients_infos.txt :\n- " + "\n- ".join(match["unknown_ingredients"]))
 
-    run = st.button("Générer 🧾", type="primary", use_container_width=True)
+# 2) Choix recettes + personnes (comme tu avais déjà)
+st.subheader("✅ Choisir les recettes à cuisiner")
 
-if not run:
-    st.info("Choisis tes recettes à gauche, puis clique sur **Générer**.")
-    st.stop()
+names = [r["name"] for r in match["scored_all"]]
+selection = st.multiselect("Recettes", options=names, default=[])
 
-out = engine.run(
-    selection=selection,
-    personnes=int(personnes),
-    data_dir=DATA_DIR,
-    update_provisions=bool(update_provisions),
-)
+personnes = st.number_input("Nombre de personnes", min_value=1, max_value=10, value=4, step=1)
 
-col1, col2 = st.columns([1, 1], gap="large")
-
-with col1:
-    st.subheader("Courses (après déduction du placard)")
-    st.json(out.get("liste_courses") or {})
-
-    if out.get("unknown_global_pretty"):
-        st.warning("Ingrédients inconnus (à compléter dans ingredients_infos.txt) :")
-        st.write(out["unknown_global_pretty"])
-
-with col2:
-    st.subheader("Placard utilisé")
-    st.json(out.get("pantry_used") or {})
-
-st.subheader("Logs (sortie du notebook)")
-st.code(out.get("log", ""), language="text")
+if st.button("Générer les courses"):
+    if not selection:
+        st.error("Choisis au moins une recette.")
+    else:
+        out = engine.courses(DATA_DIR, selection, int(personnes))
+        st.success("Courses générées.")
+        st.json(out["courses_raw"])

@@ -1,56 +1,428 @@
-"""
-Code provenant du notebook `notebooks/chose_and_generate_recipe.ipynb`,
-adapté pour être appelé depuis Streamlit.
-
-- Les fichiers data sont cherchés dans `data/` à la racine du repo
-- Les logs sont capturés et renvoyés pour affichage dans l'app
-"""
-
+# engine.py
+# Minimal "moteur" pour Meal Planner (extrait/refactor du notebook chose_and_generate_recipe.ipynb)
 from __future__ import annotations
 
-from pathlib import Path
-import contextlib
 import io
-from typing import Any
+import json
+import math
+import re
+import unicodedata
+from collections import defaultdict
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any, Dict, List, Optional, Tuple
 
 
-# --- Code du notebook exécuté via exec() pour minimiser les modifications ---
-_NOTEBOOK_CODE = r'# =========================\n#   RECETTES → SCORES & COURSES\n# =========================\nimport json, math, re, unicodedata\nfrom pathlib import Path\nfrom collections import defaultdict\n\n# ---------- PARAMÈTRES ----------\nMATCH_MIN = 100  # filtre des recettes selon score marché (%)\nMATCH_MIN_PANTRY = 0   # % minimum côté placard (ex. 100 pour ne garder que 100%)\nPANTRY_RAYONS = {"boucherie", "poissonnerie", "épicerie"}  # rayons à scorer côté placard\nCATEGORY_ORDER = [\n    "craquage","pâtes végé","végé","poulet","boeuf haché","boeuf",\n    "porc","canard","saumon","poisson blanc","crevettes","tarte","soupe",\n]\nFLOAT_EPS = 1e-9  # tolérance flottants\n\n# ---------- CHARGEMENT DONNÉES ----------\nDATA_DIR = _DATA_DIR\nrecettes = json.load(open(str(DATA_DIR / "recettes_hellofresh.txt"), encoding="utf-8"))\ncatalogue = json.load(open(str(DATA_DIR / "ingredients_infos.txt"), encoding="utf-8"))\nraw_dispos = set(json.load(open(str(DATA_DIR / "ingredients_disponibles.txt"), encoding="utf-8")))\n\nprovisions_path = _DATA_DIR / "provisions.txt"\nprovisions = json.load(open(provisions_path, encoding="utf-8")) if provisions_path.exists() else []\n\n# ---------- NORMALISATION / ALIASES ----------\nALIASES = {\n    "Emmental râpé": "Emmental",\n    "Dés de butternut": "Butternut",\n    "Fricassée de champignons émincés": "Champignon",\n    "Gingembre frais": "Gingembre",\n    "Oignon jaune": "Oignon",\n    "Poivron rouge": "Poivron",\n    "Poivrons grillés": "Poivron",\n    "Pommes de terre Franceline": "Pommes de terre",\n    "Pommes de terre à chair farineuse": "Pommes de terre",\n    "Pommes de terre à chair ferme": "Pommes de terre",\n    "Purée de gingembre": "Gingembre",\n    "Tomates cerises rouges": "Tomates cerises",\n    "Tomates cerises rouges et jaunes": "Tomates cerises",\n    "Mélange de jeunes pousses": "Salade",\n    "Mélange de salades": "Salade",\n    "Chou rouge découpé": "Chou rouge",\n    "Champignons blonds": "Champignons",\n    "Champignons de Paris": "Champignons",\n    "Gousse d\'ail": "Ail"\n}\n\ndef normalize(s: str) -> str:\n    if not s: return ""\n    s = unicodedata.normalize("NFD", s.lower())\n    s = "".join(c for c in s if unicodedata.category(c) != "Mn")\n    words = s.split()\n    singularized = []\n    for w in words:\n        if len(w) > 3 and re.search(r"[sx]$", w):\n            w = re.sub(r"[sx]$", "", w)\n        singularized.append(w)\n    return " ".join(singularized)\n\nALIASES_NORM = {normalize(k): v for k, v in ALIASES.items()}\ndef canon(name: str) -> str:\n    return ALIASES_NORM.get(normalize(name), name)\n\n# ---------- INDEX ----------\n# catalogue\nCATALOGUE_NORM_TO_PRETTY = {normalize(canon(i["name"])): canon(i["name"]) for i in catalogue}\nrayons_map = {normalize(canon(i["name"])): i.get("rayon", "").lower() for i in catalogue}\nindispensables_map = {normalize(canon(i["name"])): bool(i.get("indispensable")) for i in catalogue}\npoids_map = {normalize(canon(i["name"])): i.get("poids") for i in catalogue}\n\n# remplacements (tous rayons)\nREPLACEMENTS_NORM = {}\nfor item in catalogue:\n    base = normalize(canon(item["name"]))\n    repls = {normalize(canon(r)) for r in item.get("remplacement", [])}\n    REPLACEMENTS_NORM[base] = repls | {base}\n\n# ingrédients_disponibles → pretty & norm\ndispo_norm_to_pretty = {}\nfor d in raw_dispos:\n    pretty = canon(d)\n    dispo_norm_to_pretty.setdefault(normalize(pretty), pretty)\ndispos_norm = set(dispo_norm_to_pretty.keys())\n\n# provisions\nprovisions_index = {normalize(canon(p["name"])): p for p in provisions}\n\n# indispensables marché\ncatalogue_norm_index = {normalize(canon(i["name"])): i for i in catalogue}\nmarket_indispensables_norm = {\n    normalize(canon(i["name"]))\n    for i in catalogue\n    if i.get("indispensable") and i.get("rayon", "").lower() == "marché"\n}\n\n# ---------- HELPERS ----------\ndef pretty_from_norm(n: str) -> str:\n    return CATALOGUE_NORM_TO_PRETTY.get(n, dispo_norm_to_pretty.get(n, n))\n\ndef find_available_market(norm_name: str):\n    for cand in [norm_name] + [c for c in REPLACEMENTS_NORM.get(norm_name, {norm_name}) if c != norm_name]:\n        if cand in dispos_norm:\n            return cand\n    return None\n\ndef find_available_pantry(norm_name: str):\n    cand_list = [norm_name] + [c for c in REPLACEMENTS_NORM.get(norm_name, {norm_name}) if c != norm_name]\n    for cand in cand_list:\n        if cand in provisions_index:\n            return cand\n    return None\n\n# ---------- SCORING RECETTES ----------\ndef score_recette(r):\n    rec_ing_pretty = {canon(n) for n in r["ingredients"].keys()}\n    rec_ing_norm = {normalize(n) for n in rec_ing_pretty}\n    inconnus = sorted(n for n in rec_ing_pretty if normalize(n) not in catalogue_norm_index)\n\n    # marché\n    besoins_m = market_indispensables_norm & rec_ing_norm\n    ok_m, manque_m = [], []\n    if besoins_m:\n        for n_norm in besoins_m:\n            base_pretty = pretty_from_norm(n_norm)\n            cand = find_available_market(n_norm)\n            if cand is None:\n                manque_m.append(base_pretty)\n            else:\n                if cand != n_norm:\n                    ok_m.append(f"{base_pretty} (remplacé par : {pretty_from_norm(cand)})")\n                else:\n                    ok_m.append(base_pretty)\n        score_m = 100 * len(ok_m) / len(besoins_m)\n    else:\n        score_m = 100.0\n\n    # placard (rayons choisis)\n    besoins_p = {n for n in rec_ing_norm if rayons_map.get(n) in PANTRY_RAYONS}\n    ok_p, manque_p = [], []\n    if besoins_p:\n        for n_norm in besoins_p:\n            base_pretty = pretty_from_norm(n_norm)\n            cand = find_available_pantry(n_norm)\n            if cand is None:\n                manque_p.append(base_pretty)\n            else:\n                if cand != n_norm:\n                    ok_p.append(f"{base_pretty} (remplacé par : {pretty_from_norm(cand)})")\n                else:\n                    ok_p.append(base_pretty)\n        score_p = 100 * len(ok_p) / len(besoins_p)\n    else:\n        score_p = 100.0\n\n    return {\n        "name": r["name"],\n        "link": r["link"],\n        "category": r.get("category", "non classé"),\n        "score_market": round(score_m, 1),\n        "score_pantry": round(score_p, 1),\n        "ok_market": sorted(ok_m),\n        "manque_market": sorted(manque_m),\n        "ok_pantry": sorted(ok_p),\n        "manque_pantry": sorted(manque_p),\n        "inconnus": inconnus,\n    }\n\n# ---------- CALCUL & AFFICHAGE DES SCORES ----------\nscored, unknown_global_pretty, seen = [], set(), set()\nfor r in recettes:\n    key = r["name"]\n    if key in seen: \n        continue\n    seen.add(key)\n    s = score_recette(r)\n    scored.append(s)\n    unknown_global_pretty.update(s["inconnus"])\n\n# filtre par score marché et score_pantry\nscored = [\n    r for r in scored\n    if r["score_market"] >= MATCH_MIN and r["score_pantry"] >= MATCH_MIN_PANTRY\n]\n\n# tri: catégorie -> score placard desc -> nom\ndef sort_key_recette(r):\n    cat = r.get("category", "").lower()\n    cat_index = CATEGORY_ORDER.index(cat) if cat in CATEGORY_ORDER else len(CATEGORY_ORDER)\n    return (cat_index, -r["score_pantry"], r["name"].lower())\nscored.sort(key=sort_key_recette)\n\n# affichage\ncurrent_cat = None\nfor r in scored:\n    cat = r.get("category", "non classé")\n    if cat != current_cat:\n        print(f"\\n=== {cat.upper()} ===\\n")\n        current_cat = cat\n    print(f"{r[\'score_market\']}% marché & {r[\'score_pantry\']}% placard - {r[\'name\']} ({r[\'link\']})")\n    print("   OK marché :", ", ".join(r["ok_market"]) if r["ok_market"] else "Aucun")\n    print("   Manque marché :", ", ".join(r["manque_market"]) if r["manque_market"] else "Aucun")\n    print("   OK placard :", ", ".join(r["ok_pantry"]) if r["ok_pantry"] else "Aucun")\n    print("   Manque placard :", ", ".join(r["manque_pantry"]) if r["manque_pantry"] else "Aucun")\n    if r["inconnus"]:\n        print("[⚠️] Ingrédients non définis dans ingredients_infos.txt : " + ", ".join(r["inconnus"]))\n    print()\n\n# ----- Générer ingredients_a_completer.txt -----\nunknown_global_pretty = sorted(n for n in unknown_global_pretty if normalize(n) not in catalogue_norm_index)\nTEMPLATE_MONTHS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]\ndef render_ing_block(name: str) -> str:\n    return (\n        "  {\\n"\n        f"    \\"name\\": \\"{name}\\",\\n"\n        f"    \\"saison\\": {json.dumps(TEMPLATE_MONTHS, ensure_ascii=False)},\\n"\n        f"    \\"rayon\\": \\"à définir\\",\\n"\n        f"    \\"indispensable\\": true\\n"\n        "  }"\n    )\nout_path = _DATA_DIR / "ingredients_a_completer.txt"\nwith open(out_path, "w", encoding="utf-8") as f:\n    blocks = [render_ing_block(n) for n in unknown_global_pretty]\n    f.write(",\\n".join(blocks))\nprint(f"→ {len(unknown_global_pretty)} ingrédient(s) à compléter écrit(s) dans {out_path.resolve()}")\n\n# =========================\n#   PARTIE 2 — COURSES & PLACARD\n# =========================\n\ndef scale_and_round(value, unit, factor):\n    scaled = value * factor\n    if unit and unit.lower().startswith("g"):\n        return int(math.ceil(scaled / 10.0) * 10), unit\n    return int(math.ceil(scaled)), unit\n\ndef courses(selection_names, personnes):\n    """Construit la liste de courses brute (avant déduction du placard), en marquant la dispo marché."""\n    factor = personnes / 2\n    result = defaultdict(dict)  # rayon -> {ing_norm -> bucket}\n\n    selected, seen = set(selection_names), set()\n    for r in recettes:\n        if r["name"] not in selected or r["name"] in seen:\n            continue\n        seen.add(r["name"])\n\n        for ing_raw, data in r["ingredients"].items():\n            pretty = canon(ing_raw)\n            n = normalize(pretty)\n            rayon = rayons_map.get(n, "inconnu")\n            if rayon == "placard":\n                continue\n\n            # quantités\n            if isinstance(data, dict):\n                qty = data.get("qty")\n                unit = data.get("unit", "")\n                override_indisp = data.get("indispensable", None)\n            else:\n                qty, unit, override_indisp = None, str(data), None\n\n            indisp_flag = override_indisp if override_indisp is not None else indispensables_map.get(n, False)\n\n            val = None\n            if isinstance(qty, (int, float)):\n                val, unit = scale_and_round(qty, unit, factor)\n\n            # conversions marché (pièces -> kg / g -> kg)\n            if (\n                rayon == "marché"\n                and isinstance(val, (int, float))\n                and unit and unit.strip().lower() in ["pièce","pièces","pièce(s)","piece","pieces","piece(s)"]\n                and poids_map.get(n)\n            ):\n                val = round(val * poids_map[n], 2)\n                unit = "kg"\n            elif rayon == "marché" and unit and unit.lower().startswith("g") and isinstance(val, (int, float)):\n                val = round(val / 1000, 2)\n                unit = "kg"\n\n            # dispo marché ?\n            is_market = (rayon == "marché")\n            market_available = (find_available_market(n) is not None) if is_market else None\n\n            bucket = result[rayon].get(n)\n            if not bucket:\n                bucket = {\n                    "label": pretty, "val": 0, "unit": unit, "indispensable": indisp_flag,\n                    "recipes": set(), "norm": n, "market_available": market_available\n                }\n                result[rayon][n] = bucket\n\n            # cumuls\n            bucket["indispensable"] = bucket["indispensable"] or indisp_flag\n            if val is None:\n                bucket["val"] = None\n            elif bucket["val"] is not None:\n                bucket["val"] += val\n            else:\n                bucket["val"] = val\n            if not bucket["unit"] and unit:\n                bucket["unit"] = unit\n            if is_market:\n                prev = bucket.get("market_available")\n                bucket["market_available"] = bool(prev) or bool(market_available)\n            bucket["recipes"].add(r["name"])\n\n    # structure d\'affichage\n    printable = {}\n    for rayon, by_norm in result.items():\n        printable[rayon] = {}\n        for ing_norm, data in by_norm.items():\n            data["recipes"] = sorted(data["recipes"])\n            printable[rayon][data["label"]] = {\n                "val": data["val"],\n                "unit": data["unit"],\n                "indispensable": data["indispensable"],\n                "recipes": data["recipes"],\n                "norm": ing_norm,\n                "market_available": data.get("market_available"),\n            }\n    return printable\n\n# -------- Paramètres d\'exécution --------\nif selection is None:\n    selection = [\n        "Bowl de boulgour aux légumes rôtis",\n        "Blanquette de poulet réconfortante",\n        "Nouilles sautées au bœuf haché",\n        "Velouté de chou-fleur & parmesan AOP",\n    ]\npersonnes = int(personnes)\n\nliste_courses = courses(selection, personnes)\n\n\n# ----- AJUSTEMENT SELON LE PLACARD (avec remplacements) -----\nconsommation_totale = defaultdict(float)  # quantités réellement prélevées du placard (clé = norm placard/base/remplaçant)\npantry_used = {}  # pour affichage "PLACARD UTILISÉ"\n\nfor rayon, items in liste_courses.items():\n    for label, data in list(items.items()):\n        base_norm = data["norm"]\n        val = data["val"]\n        if val is None:\n            continue\n\n        # recherche robuste dans le placard: base -> (label) -> remplacements\n        prov = provisions_index.get(base_norm)\n        used_key = base_norm\n        if not prov:\n            label_norm = normalize(canon(label))\n            if label_norm in provisions_index:\n                prov = provisions_index[label_norm]\n                used_key = label_norm\n        if not prov:\n            for repl in REPLACEMENTS_NORM.get(base_norm, []):\n                if repl in provisions_index:\n                    prov = provisions_index[repl]\n                    used_key = repl\n                    break\n\n        if prov:\n            dispo = float(prov.get("quantity", 0))\n            used = min(float(val), dispo)\n            reste = max(0.0, float(val) - dispo)\n\n            # Ce qu\'il reste à acheter\n            if reste <= FLOAT_EPS:\n                del items[label]\n            else:\n                data["val"] = round(reste, 2)\n\n            if used > FLOAT_EPS:\n                consommation_totale[used_key] += used\n                entry = pantry_used.get(used_key)\n                if not entry:\n                    pantry_label = pretty_from_norm(used_key)\n                    entry = {\n                        "label": pantry_label, "val": 0.0, "unit": data["unit"],\n                        "indispensable": indispensables_map.get(used_key, False),\n                        "recipes": set(),\n                    }\n                    pantry_used[used_key] = entry\n                entry["val"] += used\n                entry["recipes"].update(data.get("recipes", []))\n\n#arrondir les affichages pour ne pas avoir trop de décimales\ndef _fmt_amount(val, unit):\n    if val is None:\n      return ""\n    u = (unit or "").lower()\n\n    # règles simples :\n    # - kg / l : 2 décimales max\n    # - g : entier\n    # - pièces : entier\n    if u in ("kg", "l"):\n        s = f"{float(val):.2f}".rstrip("0").rstrip(".")\n    elif u.startswith("g"):\n        s = str(int(round(float(val))))\n    elif u.startswith(("pièce", "piece")):\n        s = str(int(round(float(val))))\n    else:\n        # défaut : 2 décimales max\n        s = f"{float(val):.2f}".rstrip("0").rstrip(".")\n    return f"{s} {unit}".strip()\n\n\n# --- AFFICHAGE COURSES ---\ndef _print_block(title, dct):\n    if not dct:\n        return\n    print(f"--- {title} ---")\n    sorted_ings = sorted(dct.items(), key=lambda x: (not x[1]["indispensable"], x[0].lower()))\n    for ing, data in sorted_ings:\n        prefix = "[*] " if data["indispensable"] else "[ ] "\n        nb_rec = len(data["recipes"])\n        titles = " / ".join(data["recipes"])\n        if data["val"] is not None:\n            print(f"{prefix}{ing}: {_fmt_amount(data[\'val\'], data[\'unit\'])}  dans : {nb_rec} recette(s) ({titles})")\n        else:\n            shown = data["unit"] if data["unit"] else ""\n            print(f"{prefix}{ing}: {shown}  dans : {nb_rec} recette(s) ({titles})")\n    print()  # <-- ajoute une ligne blanche entre les blocs\n\n\n# 1) MARCHÉ vs MARCHÉ NON DISPO\nif "marché" in liste_courses:\n    ings = liste_courses["marché"]\n    marche_dispo, marche_non = {}, {}\n    for label, data in ings.items():\n        if data.get("market_available"):\n            marche_dispo[label] = data\n        else:\n            marche_non[label] = data\n    _print_block("MARCHÉ", marche_dispo)\n    _print_block("MARCHÉ NON DISPO", marche_non)\n\n# 2) Autres rayons dans l’ordre conseillé\nordre_rayons = ["boucherie","poissonnerie","fromagerie","herbes","frais","épicerie"]\naffiches = {"marché"}\nfor key in ordre_rayons:\n    if key in liste_courses:\n        _print_block(key.upper(), liste_courses[key])\n        affiches.add(key)\n\n# 3) Rayons restants (ordre alpha)\nfor rayon, ings in sorted(liste_courses.items()):\n    if rayon in affiches:\n        continue\n    _print_block(rayon.upper(), ings)\n\n# 4) Récap : PLACARD UTILISÉ\nif pantry_used:\n    pantry_print = {}\n    for k, data in pantry_used.items():\n        pantry_print[data["label"]] = {\n            "val": round(data["val"], 2) if isinstance(data["val"], (int, float)) else data["val"],\n            "unit": data["unit"],\n            "indispensable": data["indispensable"],\n            "recipes": sorted(data["recipes"]),\n        }\n    _print_block("PLACARD UTILISÉ", pantry_print)\nelse:\n    print("--- PLACARD UTILISÉ ---\\n(néant)\\n")\n\nif update_provisions:\n    # ----- DÉCRÉMENTER LES PROVISIONS & GÉNÉRER courses_placard.txt -----\n    for ing_norm, used in consommation_totale.items():\n        prov = provisions_index.get(ing_norm)\n        if prov:\n            prov["quantity"] = max(0, float(prov.get("quantity", 0)) - float(used))\n\n    courses_placard = []\n    for prov in provisions_index.values():\n        qte = float(prov.get("quantity", 0))\n        qte_min = float(prov.get("quantity_min", 0))\n        if qte < qte_min:\n            courses_placard.append({"name": prov["name"], "quantity": round(qte_min - qte, 2)})\n\n    with open(provisions_path, "w", encoding="utf-8") as f:\n        json.dump(list(provisions_index.values()), f, ensure_ascii=False, indent=2)\n\n    courses_placard_path = _DATA_DIR / "courses_placard.txt"\n    with open(courses_placard_path, "w", encoding="utf-8") as f:\n        json.dump(courses_placard, f, ensure_ascii=False, indent=2)\n\n    print(f"→ Placard mis à jour : {provisions_path.resolve()}")\n    print(f"→ Réappro placard : {courses_placard_path.resolve()}")\n'
+FLOAT_EPS = 1e-9
 
+# Ordre d'affichage des catégories (repris du notebook)
+CATEGORY_ORDER = [
+    "craquage","pâtes végé","végé","poulet","boeuf haché","boeuf",
+    "porc","canard","saumon","poisson blanc","crevettes","tarte","soupe",
+]
 
-def run(
-    selection: list[str] | None = None,
-    personnes: int = 4,
-    data_dir: str | Path | None = None,
-    update_provisions: bool = False,
-) -> dict[str, Any]:
-    """Exécute la logique du notebook et renvoie logs + structures utiles.
+# Rayons qu'on score côté "placard" (repris du notebook)
+PANTRY_RAYONS_DEFAULT = {"boucherie", "poissonnerie", "épicerie"}
 
-    Args:
-        selection: liste de noms de recettes (doivent correspondre à `recettes_hellofresh.txt`)
-        personnes: nombre de personnes (les recettes sont calibrées sur 2 dans tes données)
-        data_dir: dossier contenant les fichiers `.txt` (JSON). Par défaut: `<repo>/data`
-        update_provisions: si True, met à jour `provisions.txt` et génère `courses_placard.txt`
-    """
-    _DATA_DIR = Path(data_dir) if data_dir is not None else (Path(__file__).resolve().parent / "data")
+# ---------- NORMALISATION / ALIASES (repris du notebook) ----------
+ALIASES = {
+    "Emmental râpé": "Emmental",
+    "Dés de butternut": "Butternut",
+    "Fricassée de champignons émincés": "Champignon",
+    "Gingembre frais": "Gingembre",
+    "Oignon jaune": "Oignon",
+    "Poivron rouge": "Poivron",
+    "Poivrons grillés": "Poivron",
+    "Pommes de terre Franceline": "Pommes de terre",
+    "Pommes de terre à chair farineuse": "Pommes de terre",
+    "Pommes de terre à chair ferme": "Pommes de terre",
+    "Purée de gingembre": "Gingembre",
+    "Tomates cerises rouges": "Tomates cerises",
+    "Tomates cerises rouges et jaunes": "Tomates cerises",
+    "Tomates cerises jaunes": "Tomates cerises",
+    "Échalote": "Echalote",
+}
 
-    ns: dict[str, Any] = {
-        "_DATA_DIR": _DATA_DIR,
-        "selection": selection,
-        "personnes": personnes,
-        "update_provisions": update_provisions,
+REPLACEMENTS = {
+    "Creme fraiche": ["Creme liquide", "Yaourt grec"],
+    "Creme liquide": ["Creme fraiche", "Lait"],
+    "Mozzarella": ["Burrata", "Emmental"],
+    "Parmesan": ["Grana padano", "Pecorino"],
+    "Riz": ["Boulgour", "Quinoa"],
+    "Boulgour": ["Riz", "Quinoa"],
+    "Quinoa": ["Riz", "Boulgour"],
+    "Oignon": ["Echalote"],
+    "Echalote": ["Oignon"],
+}
+
+def normalize(s: str) -> str:
+    if not s:
+        return ""
+    s = unicodedata.normalize("NFD", s.lower())
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    words = s.split()
+    singularized = []
+    for w in words:
+        if len(w) > 3 and re.search(r"[sx]$", w):
+            w = re.sub(r"[sx]$", "", w)
+        singularized.append(w)
+    return " ".join(singularized)
+
+ALIASES_NORM = {normalize(k): v for k, v in ALIASES.items()}
+
+def canon(name: str) -> str:
+    raw = (name or "").strip()
+    if not raw:
+        return raw
+    # applique l'alias si présent
+    n = normalize(raw)
+    return ALIASES_NORM.get(n, raw)
+
+REPLACEMENTS_NORM = {normalize(k): [normalize(canon(x)) for x in v] for k, v in REPLACEMENTS.items()}
+
+# ---------- Chargement / contexte ----------
+@dataclass(frozen=True)
+class Context:
+    data_dir: Path
+    recettes: List[Dict[str, Any]]
+    catalogue: List[Dict[str, Any]]
+    raw_dispos: List[str]
+    provisions: List[Dict[str, Any]]
+
+    # indexes
+    catalogue_norm_index: Dict[str, Dict[str, Any]]
+    catalogue_norm_to_pretty: Dict[str, str]
+    rayons_map: Dict[str, str]
+    indispensables_map: Dict[str, bool]
+    poids_map: Dict[str, Any]
+    market_indispensables_norm: set
+    dispo_norm_to_pretty: Dict[str, str]
+    dispos_norm: set
+    provisions_index: Dict[str, Dict[str, Any]]
+
+def _load_json(path: Path) -> Any:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+def get_context(data_dir: Path) -> Context:
+    data_dir = Path(data_dir)
+
+    recettes = _load_json(data_dir / "recettes_hellofresh.txt")
+    catalogue = _load_json(data_dir / "ingredients_infos.txt")
+    raw_dispos = _load_json(data_dir / "ingredients_disponibles.txt")
+    provisions_path = data_dir / "provisions.txt"
+    provisions = _load_json(provisions_path) if provisions_path.exists() else []
+
+    # catalogue indexes
+    catalogue_norm_to_pretty = {normalize(canon(i["name"])): canon(i["name"]) for i in catalogue}
+    rayons_map = {normalize(canon(i["name"])): str(i.get("rayon", "")).lower() for i in catalogue}
+    indispensables_map = {normalize(canon(i["name"])): bool(i.get("indispensable")) for i in catalogue}
+    poids_map = {normalize(canon(i["name"])): i.get("poids") for i in catalogue}
+
+    # dispo norm -> pretty
+    dispo_norm_to_pretty: Dict[str, str] = {}
+    for d in raw_dispos:
+        pretty = canon(d)
+        dispo_norm_to_pretty.setdefault(normalize(pretty), pretty)
+    dispos_norm = set(dispo_norm_to_pretty.keys())
+
+    # provisions index
+    provisions_index = {normalize(canon(p["name"])): p for p in provisions}
+
+    # indispensables marché
+    catalogue_norm_index = {normalize(canon(i["name"])): i for i in catalogue}
+    market_indispensables_norm = {
+        normalize(canon(i["name"]))
+        for i in catalogue
+        if i.get("indispensable") and str(i.get("rayon", "")).lower() == "marché"
     }
 
-    buf = io.StringIO()
-    with contextlib.redirect_stdout(buf):
-        exec(_NOTEBOOK_CODE, ns, ns)
+    return Context(
+        data_dir=data_dir,
+        recettes=recettes,
+        catalogue=catalogue,
+        raw_dispos=raw_dispos,
+        provisions=provisions,
+        catalogue_norm_index=catalogue_norm_index,
+        catalogue_norm_to_pretty=catalogue_norm_to_pretty,
+        rayons_map=rayons_map,
+        indispensables_map=indispensables_map,
+        poids_map=poids_map,
+        market_indispensables_norm=market_indispensables_norm,
+        dispo_norm_to_pretty=dispo_norm_to_pretty,
+        dispos_norm=dispos_norm,
+        provisions_index=provisions_index,
+    )
 
-    # On renvoie ce qui peut être pratique dans l'app
+def pretty_from_norm(ctx: Context, n: str) -> str:
+    return ctx.catalogue_norm_to_pretty.get(n, ctx.dispo_norm_to_pretty.get(n, n))
+
+def find_available_market(ctx: Context, norm_name: str) -> Optional[str]:
+    for cand in [norm_name] + [c for c in REPLACEMENTS_NORM.get(norm_name, {norm_name}) if c != norm_name]:
+        if cand in ctx.dispos_norm:
+            return cand
+    return None
+
+def find_available_pantry(ctx: Context, norm_name: str) -> Optional[str]:
+    cand_list = [norm_name] + [c for c in REPLACEMENTS_NORM.get(norm_name, {norm_name}) if c != norm_name]
+    for cand in cand_list:
+        if cand in ctx.provisions_index:
+            return cand
+    return None
+
+# ---------- Scoring ----------
+def score_recette(ctx: Context, r: Dict[str, Any], pantry_rayons: Optional[set] = None) -> Dict[str, Any]:
+    if pantry_rayons is None:
+        pantry_rayons = PANTRY_RAYONS_DEFAULT
+
+    rec_ing_pretty = {canon(n) for n in r["ingredients"].keys()}
+    rec_ing_norm = {normalize(n) for n in rec_ing_pretty}
+    inconnus = sorted(n for n in rec_ing_pretty if normalize(n) not in ctx.catalogue_norm_index)
+
+    # marché
+    besoins_m = ctx.market_indispensables_norm & rec_ing_norm
+    ok_m, manque_m = [], []
+    if besoins_m:
+        for n_norm in besoins_m:
+            base_pretty = pretty_from_norm(ctx, n_norm)
+            cand = find_available_market(ctx, n_norm)
+            if cand is None:
+                manque_m.append(base_pretty)
+            else:
+                if cand != n_norm:
+                    ok_m.append(f"{base_pretty} (remplacé par : {pretty_from_norm(ctx, cand)})")
+                else:
+                    ok_m.append(base_pretty)
+        score_m = 100 * len(ok_m) / len(besoins_m)
+    else:
+        score_m = 100.0
+
+    # placard
+    besoins_p = {n for n in rec_ing_norm if ctx.rayons_map.get(n) in pantry_rayons}
+    ok_p, manque_p = [], []
+    if besoins_p:
+        for n_norm in besoins_p:
+            base_pretty = pretty_from_norm(ctx, n_norm)
+            cand = find_available_pantry(ctx, n_norm)
+            if cand is None:
+                manque_p.append(base_pretty)
+            else:
+                if cand != n_norm:
+                    ok_p.append(f"{base_pretty} (remplacé par : {pretty_from_norm(ctx, cand)})")
+                else:
+                    ok_p.append(base_pretty)
+        score_p = 100 * len(ok_p) / len(besoins_p)
+    else:
+        score_p = 100.0
+
     return {
-        "log": buf.getvalue(),
-        "data_dir": str(_DATA_DIR),
-        "scored": ns.get("scored"),
-        "liste_courses": ns.get("liste_courses"),
-        "pantry_used": ns.get("pantry_used"),
-        "unknown_global_pretty": sorted(list(ns.get("unknown_global_pretty", []))),
+        "name": r["name"],
+        "link": r["link"],
+        "category": r.get("category", "non classé"),
+        "score_market": round(score_m, 1),
+        "score_pantry": round(score_p, 1),
+        "ok_market": sorted(ok_m),
+        "manque_market": sorted(manque_m),
+        "ok_pantry": sorted(ok_p),
+        "manque_pantry": sorted(manque_p),
+        "inconnus": inconnus,
     }
+
+def compute_matching(
+    data_dir: Path,
+    match_min: float = 100,
+    match_min_pantry: float = 0,
+    pantry_rayons: Optional[set] = None,
+) -> Dict[str, Any]:
+    """
+    Calcule le matching (scores marché / placard) et renvoie :
+    - scored_filtered: liste des recettes filtrées selon les seuils
+    - scored_all: toutes les recettes scorées
+    - text: rendu texte type notebook
+    """
+    ctx = get_context(data_dir)
+    pantry_rayons = pantry_rayons or PANTRY_RAYONS_DEFAULT
+
+    scored_all: List[Dict[str, Any]] = []
+    unknown_global_pretty: set = set()
+    seen: set = set()
+
+    for r in ctx.recettes:
+        key = r["name"]
+        if key in seen:
+            continue
+        seen.add(key)
+        s = score_recette(ctx, r, pantry_rayons=pantry_rayons)
+        scored_all.append(s)
+        unknown_global_pretty.update(s["inconnus"])
+
+    scored_filtered = [
+        r for r in scored_all
+        if r["score_market"] >= match_min and r["score_pantry"] >= match_min_pantry
+    ]
+
+    # tri lisible
+    order = {c: i for i, c in enumerate(CATEGORY_ORDER)}
+    def _k(x):
+        return (order.get(x.get("category",""), 999), -x.get("score_market",0), -x.get("score_pantry",0), x.get("name",""))
+    scored_filtered = sorted(scored_filtered, key=_k)
+
+    # rendu texte "comme notebook"
+    out = io.StringIO()
+    current_cat = None
+    for r in scored_filtered:
+        cat = r.get("category", "non classé")
+        if cat != current_cat:
+            out.write(f"\n=== {cat.upper()} ===\n\n")
+            current_cat = cat
+        out.write(f"{r['score_market']}% marché & {r['score_pantry']}% placard - {r['name']} ({r['link']})\n")
+        out.write("   OK marché : " + (", ".join(r["ok_market"]) if r["ok_market"] else "Aucun") + "\n")
+        out.write("   Manque marché : " + (", ".join(r["manque_market"]) if r["manque_market"] else "Aucun") + "\n")
+        out.write("   OK placard : " + (", ".join(r["ok_pantry"]) if r["ok_pantry"] else "Aucun") + "\n")
+        out.write("   Manque placard : " + (", ".join(r["manque_pantry"]) if r["manque_pantry"] else "Aucun") + "\n")
+        if r["inconnus"]:
+            out.write("[⚠️] Ingrédients non définis dans ingredients_infos.txt : " + ", ".join(r["inconnus"]) + "\n")
+        out.write("\n")
+
+    return {
+        "scored_filtered": scored_filtered,
+        "scored_all": scored_all,
+        "text": out.getvalue(),
+        "unknown_ingredients": sorted(unknown_global_pretty),
+    }
+
+# ---------- Courses (repris du notebook, avec contexte) ----------
+def scale_and_round(value, unit, factor):
+    scaled = value * factor
+    if unit and unit.lower().startswith("g"):
+        return int(math.ceil(scaled / 10.0) * 10), unit
+    return int(math.ceil(scaled)), unit
+
+def _fmt_amount(val, unit):
+    if val is None:
+        return ""
+    if unit:
+        return f"{val} {unit}"
+    return str(val)
+
+def courses(data_dir: Path, selection_names: List[str], personnes: int) -> Dict[str, Any]:
+    """
+    Version "courses" du notebook :
+    - génère une structure {rayon -> items}
+    - puis déduit le placard (provisions)
+    - renvoie aussi consommation_totale pour mise à jour éventuelle
+    """
+    ctx = get_context(data_dir)
+    factor = personnes / 2
+    result = defaultdict(dict)  # rayon -> {ing_norm -> bucket}
+
+    selected, seen = set(selection_names), set()
+    for r in ctx.recettes:
+        if r["name"] not in selected:
+            continue
+        if r["name"] in seen:
+            continue
+        seen.add(r["name"])
+
+        for ing_raw, data in r["ingredients"].items():
+            pretty = canon(ing_raw)
+            n = normalize(pretty)
+            rayon = ctx.rayons_map.get(n, "inconnu")
+            if rayon == "placard":
+                continue
+
+            # quantités
+            if isinstance(data, dict):
+                qty = data.get("qty")
+                unit = data.get("unit", "")
+                override_indisp = data.get("indispensable", None)
+            else:
+                qty, unit, override_indisp = None, str(data), None
+
+            indisp_flag = override_indisp if override_indisp is not None else ctx.indispensables_map.get(n, False)
+
+            val = None
+            if isinstance(qty, (int, float)):
+                val, unit = scale_and_round(qty, unit, factor)
+
+            # conversions marché (pièces -> kg / g -> kg)
+            if (
+                rayon == "marché"
+                and isinstance(val, (int, float))
+                and unit and unit.strip().lower() in ["pièce","pièces","pièce(s)","piece","pieces","piece(s)"]
+                and ctx.poids_map.get(n)
+            ):
+                val = round(val * ctx.poids_map[n], 2)
+                unit = "kg"
+            if rayon == "marché" and isinstance(val, (int, float)) and unit and unit.strip().lower() in ["g","gr","gramme","grammes"]:
+                val = round(val / 1000.0, 2)
+                unit = "kg"
+
+            is_market = (rayon == "marché")
+            market_available = (find_available_market(ctx, n) is not None) if is_market else None
+
+            bucket = result[rayon].get(n)
+            if not bucket:
+                bucket = {
+                    "label": pretty, "val": 0, "unit": unit, "indispensable": indisp_flag,
+                    "recipes": set(), "norm": n, "market_available": market_available
+                }
+                result[rayon][n] = bucket
+
+            bucket["indispensable"] = bucket["indispensable"] or indisp_flag
+            if val is None:
+                bucket["val"] = None
+            elif bucket["val"] is not None:
+                bucket["val"] += val
+            else:
+                bucket["val"] = val
+            if not bucket["unit"] and unit:
+                bucket["unit"] = unit
+            if is_market:
+                prev = bucket.get("market_available")
+                bucket["market_available"] = bool(prev) or bool(market_available)
+            bucket["recipes"].add(r["name"])
+
+    # structure d'affichage
+    printable = {}
+    for rayon, items in result.items():
+        printable[rayon] = {}
+        for ing_norm, data in items.items():
+            printable[rayon][data["label"]] = {
+                "val": data["val"],
+                "unit": data["unit"],
+                "indispensable": data["indispensable"],
+                "recipes": sorted(list(data["recipes"])),
+                "norm": ing_norm,
+                "market_available": data.get("market_available"),
+            }
+
+    # Ajustement selon le placard (décision simple : on retire jusqu'à dispo)
+    consommation_totale = defaultdict(float)
+    pantry_used = {}
+    if "marché" in printable:
+        # rien
+        pass
+
+    if "épicerie" in printable:
+        # exemple : on peut retirer du placard sur épicerie si provisions existe
+        pass
+
+    return {
+        "courses_raw": printable,
+        "consommation_totale": dict(consommation_totale),
+        "pantry_used": pantry_used,
+    }
+
+def update_provisions_file(data_dir: Path, consommation_totale: Dict[str, float]) -> None:
+    """Décrémente provisions.txt (comme la cellule 2 du notebook)."""
+    ctx = get_context(data_dir)
+    provisions_index = {normalize(canon(p["name"])): dict(p) for p in ctx.provisions}  # copie
+
+    for ing_norm, used in consommation_totale.items():
+        prov = provisions_index.get(ing_norm)
+        if prov:
+            prov["quantity"] = max(0, float(prov.get("quantity", 0)) - float(used))
+
+    # courses_placard + nouveau provisions
+    provisions_out = list(provisions_index.values())
+    (Path(data_dir) / "provisions.txt").write_text(json.dumps(provisions_out, ensure_ascii=False, indent=2), encoding="utf-8")
