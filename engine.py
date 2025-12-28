@@ -28,6 +28,7 @@ FLOAT_EPS = 1e-9  # tolérance flottants
 # ---------- Chargement des données & index (comme le notebook) ----------
 
 def load_data(data_dir: str | Path):
+    global DATA_DIR, recettes, catalogue, raw_dispos, provisions, CATALOGUE_NORM_TO_PRETTY, rayons_map, indispensables_map, poids_map, REPLACEMENTS_NORM, dispo_norm_to_pretty, dispos_norm, catalogue_norm_index, provisions_index, market_indispensables_norm, dispo_norm_to_pretty, dispo_norm_to_pretty
 
     """Charge les fichiers dans data_dir et construit les index utilisés par le scoring.
 
