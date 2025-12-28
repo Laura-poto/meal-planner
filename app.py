@@ -1,8 +1,6 @@
-# app.py
 from pathlib import Path
 import streamlit as st
 import pandas as pd
-
 import engine
 
 st.set_page_config(page_title="Meal Planner", layout="wide")
@@ -10,30 +8,24 @@ st.title("🍽️ Meal Planner")
 
 DATA_DIR = Path("data")
 
-# 1) Matching (comme le notebook) — sans aucun paramètre inutile
 match = engine.compute_matching(DATA_DIR)
 
-st.subheader("📊 Matching des recettes (marché / placard)")
-left, right = st.columns([2, 1])
+st.subheader("📊 Matching des recettes (comme le notebook)")
+col1, col2 = st.columns([2, 1])
 
-with left:
-    if match["scored_filtered"]:
-        df = pd.DataFrame(match["scored_filtered"])
+with col1:
+    df = pd.DataFrame(match["scored"])
+    if len(df) == 0:
+        st.info("Aucune recette ne passe les filtres actuels.")
+    else:
         cols = [c for c in ["category","name","score_market","score_pantry","manque_market","manque_pantry","link"] if c in df.columns]
         st.dataframe(df[cols], use_container_width=True, height=520)
-    else:
-        st.info("Aucune recette ne passe les filtres actuels (MATCH_MIN/MATCH_MIN_PANTRY).")
 
-with right:
-    st.markdown("**Affichage texte (comme le notebook)**")
-    with st.expander("Voir / masquer"):
+with col2:
+    with st.expander("Voir l'affichage texte (comme dans Jupyter)", expanded=False):
         st.code(match["text"], language="text")
-    if match["unknown_ingredients"]:
-        st.warning("Ingrédients non définis dans ingredients_infos.txt :\n- " + "\n- ".join(match["unknown_ingredients"]))
 
-# 2) Choix recettes + personnes (comme tu avais déjà)
 st.subheader("✅ Choisir les recettes à cuisiner")
-
 names = [r["name"] for r in match["scored_all"]]
 selection = st.multiselect("Recettes", options=names, default=[])
 
@@ -45,4 +37,4 @@ if st.button("Générer les courses"):
     else:
         out = engine.courses(DATA_DIR, selection, int(personnes))
         st.success("Courses générées.")
-        st.json(out["courses_raw"])
+        st.json(out)
