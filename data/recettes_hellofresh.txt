@@ -4944,7 +4944,7 @@
         "qty": 2,
         "unit": "pièce(s)"
       },
-      "Mélange de champignons prédécoupés": {
+      "Champignon": {
         "qty": 200,
         "unit": "g"
       },
@@ -5384,7 +5384,7 @@
         "qty": 20,
         "unit": "ml"
       },
-      "Mélange de champignons prédécoupés": {
+      "Champignon": {
         "qty": 350,
         "unit": "g"
       },
@@ -5864,7 +5864,7 @@
         "qty": 20,
         "unit": "g"
       },
-      "Mélange de champignons prédécoupés": {
+      "Champignon": {
         "qty": 300,
         "unit": "g"
       },
