@@ -377,7 +377,7 @@
     "saison": ["janvier", "février", "mars", "septembre", "octobre", "novembre", "décembre"], 
     "rayon": "marché", 
     "indispensable": true,
-    "poids": 0.2
+    "poids": 0.3
   }, 
   {
     "name": "Pois mange-tout", 
