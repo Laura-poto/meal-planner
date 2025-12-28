@@ -66,15 +66,30 @@ df = df.rename(columns={
 cols = ["catégorie", "nom", "taux de match marché", "taux de match placard", "manque marché", "manque placard", "link"]
 cols = [c for c in cols if c in df.columns]  # sécurité
 
-st.data_editor(
-    df[cols],
-    use_container_width=True,
-    height=520,
-    disabled=True,
-    column_config={
-        "link": st.column_config.LinkColumn("lien"),
-    },
+cols_sub = [c for c in cols if c != "catégorie"]  # la catégorie sera dans le sous-titre, pas dans le tableau
+order_map = {c.casefold(): i for i, c in enumerate(engine.CATEGORY_ORDER)}
+categories = sorted(
+    df["catégorie"].dropna().unique(),
+    key=lambda c: (order_map.get(str(c).casefold(), 999), str(c).casefold())
 )
+
+for cat in categories:
+    st.markdown(f"### {cat.upper()}") 
+    sdf = df[df["catégorie"] == cat]
+
+    # hauteur auto (évite un gros tableau vide)
+    h = min(520, 38 * (len(sdf) + 1) + 20)
+
+    st.data_editor(
+        sdf[cols_sub],
+        use_container_width=True,
+        height=h,
+        disabled=True,
+        column_config={
+            "link": st.column_config.LinkColumn("lien"),
+        },
+        key=f"table_{str(cat).casefold()}",
+    )
 
 st.divider()
 
