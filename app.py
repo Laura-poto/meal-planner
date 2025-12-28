@@ -59,11 +59,13 @@ df = df.rename(columns={
     "name": "nom",
     "score_market": "taux de match marché",
     "score_pantry": "taux de match placard",
+    "ok_market": "OK marché",
+    "ok_pantry": "OK placard",
     "manque_market": "manque marché",
     "manque_pantry": "manque placard",
 })
 
-cols = ["catégorie", "nom", "taux de match marché", "taux de match placard", "manque marché", "manque placard", "link"]
+cols = ["catégorie", "nom", "taux de match marché", "taux de match placard", "OK marché", "OK placard", "manque marché", "manque placard", "link"]
 cols = [c for c in cols if c in df.columns]  # sécurité
 
 cols_sub = [c for c in cols if c != "catégorie"]  # la catégorie sera dans le sous-titre, pas dans le tableau
