@@ -20,7 +20,7 @@ def format_courses(liste_courses: dict) -> str:
     rayons_sorted = sorted(rayons, key=lambda r: (0 if r.lower() in ["marché","marche"] else 1, r.lower()))
     for rayon in rayons_sorted:
         header = _upper_no_accents(rayon)
-        lines.append(header)
+        lines.append(f"**{header}**")
         items = liste_courses[rayon] or {}
         # tri : indispensable d'abord, puis alpha
         def _k(item):
@@ -54,17 +54,29 @@ col1, col2 = st.columns([2, 1])
 
 with col1:
     df = pd.DataFrame(match["scored"])
-    if df.empty:
-        st.info("Aucune recette ne passe les filtres actuels (MATCH_MIN / MATCH_MIN_PANTRY).")
-    else:
-        cols = [c for c in ["category","name","score_market","score_pantry","manque_market","manque_pantry","link"] if c in df.columns]
-        st.dataframe(df[cols], use_container_width=True, height=520)
 
-with col2:
-    with st.expander("Voir l'affichage texte (comme dans le notebook)"):
-        st.code(match["text"], language="text")
-    if match["unknown_ingredients"]:
-        st.warning("Ingrédients non définis dans ingredients_infos.txt :\n- " + "\n- ".join(match["unknown_ingredients"]))
+    # Renommage colonnes (voir section suivante)
+    df = df.rename(columns={
+        "category": "catégorie",
+        "name": "nom",
+        "score_market": "taux de match marché",
+        "score_pantry": "taux de match placard",
+        "manque_market": "manque marché",
+        "manque_pantry": "manque placard",
+    })
+
+    cols = ["catégorie", "nom", "taux de match marché", "taux de match placard", "manque marché", "manque placard", "link"]
+    cols = [c for c in cols if c in df.columns]  # sécurité
+
+    st.data_editor(
+        df[cols],
+        use_container_width=True,
+        height=520,
+        disabled=True,
+        column_config={
+            "link": st.column_config.LinkColumn("lien"),
+        },
+    )
 
 st.divider()
 
@@ -83,7 +95,7 @@ if st.button("Générer les courses"):
     else:
         out = engine.compute_courses(DATA_DIR, selection, int(personnes), update_provisions=update_prov)
         st.success("Courses générées.")
-        st.text(format_courses(out["liste_courses"]))
+        st.markdown(format_courses(out["liste_courses"]))
         with st.expander("Voir la version JSON (debug)"):
             st.json(out["liste_courses"])
         with st.expander("Voir détails placard (consommation / utilisé)"):
