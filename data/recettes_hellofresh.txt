@@ -15244,7 +15244,7 @@
     "link": "https://www.hellofresh.fr/recipes/filet-deglefin-et-sauce-ciboulette-5e4cf7f5eb292a04614e5efd",
     "category": "poisson blanc",
     "ingredients": {
-      "Carottes en botte": {
+      "Carotte": {
         "qty": 500,
         "unit": "g"
       },
