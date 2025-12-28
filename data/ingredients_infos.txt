@@ -1,0 +1,1907 @@
+[
+  {
+    "name": "Aubergine", 
+    "saison": ["juin", "juillet", "août", "septembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.25
+  }, 
+  {
+    "name": "Avocat", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Broccolini", 
+    "saison": ["juin", "juillet", "août", "septembre", "octobre"], 
+    "remplacement": ["Brocoli"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.3
+  }, 
+  {
+    "name": "Brocoli", 
+    "saison": ["juin", "juillet", "août", "septembre", "octobre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.3
+  }, 
+  {
+    "name": "Butternut", 
+    "saison": ["septembre", "octobre", "novembre", "décembre", "janvier", "février", "mars"], 
+    "remplacement": ["Courge butternut", "Dés de butternut", "Potiron", "Potimarron"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 1
+  }, 
+  {
+    "name": "Carotte", 
+    "saison": ["janvier", "février", "mars", "avril", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Carottes en botte"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.13
+  }, 
+  {
+    "name": "Carottes en botte", 
+    "saison": ["janvier", "février", "mars", "avril", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Carotte"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.13
+  }, 
+  {
+    "name": "Champignon", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 1
+  }, 
+  {
+    "name": "Champignons", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 1
+  }, 
+  {
+    "name": "Champignons blonds", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Champignons", "Champignon"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 1
+  }, 
+  {
+    "name": "Champignons de Paris", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Champignons", "Champignon"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 1
+  }, 
+  {
+    "name": "Chou blanc", 
+    "saison": ["janvier", "février", "mars", "avril", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Chou", "Chou rouge", "Chou chinois"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.7
+  }, 
+  {
+    "name": "Chou chinois", 
+    "saison": ["janvier", "février", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Chou", "Chou rouge", "Chou blanc"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.9
+  }, 
+  {
+    "name": "Chou rouge", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Chou", "Chou chinois", "Chou blanc"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 1
+  }, 
+  {
+    "name": "Chou rouge découpé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Chou", "Chou rouge", "Chou blanc"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 1
+  }, 
+  {
+    "name": "Chou-fleur",
+    "saison": ["mai", "juin", "juillet", "août", "septembre", "octobre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.8
+  }, 
+  {
+    "name": "Citron", 
+    "saison": ["juin", "juillet", "août", "septembre"], 
+    "rayon": "marché", 
+    "indispensable": false,
+    "poids": 0.12
+  }, 
+  {
+    "name": "Citron jaune", 
+    "saison": ["juin", "juillet", "août", "septembre"], 
+    "rayon": "marché", 
+    "indispensable": false,
+    "poids": 0.12
+  }, 
+  {
+    "name": "Citron vert", 
+    "saison": ["juin", "juillet", "août", "septembre"], 
+    "rayon": "marché", 
+    "indispensable": false,
+    "poids": 0.12
+  }, 
+  {
+    "name": "Citronnelle fraîche", 
+    "saison": ["mai", "juin", "juillet", "août", "septembre", "octobre"], 
+    "rayon": "marché", 
+    "indispensable": false,
+    "poids": 0.1
+  }, 
+  {
+    "name": "Concombre", 
+    "saison": ["mai", "juin", "juillet", "août", "septembre", "octobre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.5
+  }, 
+  {
+    "name": "Courge butternut", 
+    "saison": ["septembre", "octobre", "novembre", "décembre", "janvier", "février", "mars"], 
+    "remplacement": ["Butternut", "Dés de butternut", "Potiron", "Potimarron"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 1
+  }, 
+  {
+    "name": "Courgette", 
+    "saison": ["juin", "juillet", "août", "septembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.3
+  }, 
+  {
+    "name": "Cresson", 
+    "saison": ["janvier", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.002
+  }, 
+  {
+    "name": "Câpres", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": false,
+    "poids": 0.1
+  }, 
+  {
+    "name": "Céleri branche", 
+    "saison": ["janvier", "février", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Céleri", "Céleri-branche"],
+    "rayon": "marché", 
+    "indispensable": false,
+    "poids": 0.100
+  }, 
+  {
+    "name": "Céleri-branche", 
+    "saison": ["janvier", "février", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Céleri", "Céleri branche"], 
+    "rayon": "marché", 
+    "indispensable": false,
+    "poids": 0.100
+  }, 
+  {
+    "name": "Dés de butternut", 
+    "saison": ["septembre", "octobre", "novembre", "décembre", "janvier", "février", "mars"],
+    "remplacement": ["Butternut", "Courge butternut", "Potiron", "Potimarron"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 1
+  }, 
+  {
+    "name": "Endive", 
+    "saison": ["janvier", "février", "mars", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.150
+  }, 
+  {
+    "name": "Fenouil", 
+    "saison": ["mai", "juin", "juillet", "août", "septembre", "octobre", "novembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.3
+  }, 
+  {
+    "name": "Fricassée de champignons émincés", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Champignons", "Champignon"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 1
+  }, 
+  {
+    "name": "Gingembre", 
+    "saison": ["janvier", "février", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": false,
+    "poids": 0.01
+  }, 
+  {
+    "name": "Gingembre frais", 
+    "saison": ["janvier", "février", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": false,
+    "poids": 0.01
+  },
+  {
+    "name": "Gousse d'ail", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": false,
+    "poids": 0.01
+  }, 
+  {
+    "name": "Grenade", 
+    "saison": ["juin", "juillet", "août", "septembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.155
+  }, 
+  {
+    "name": "Grenailles", 
+    "saison": ["janvier", "février", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Pommes de terre", "Patate"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Grenailles rouges", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Pommes de terre", "Patate"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Haricots verts", 
+    "saison": ["juin", "juillet", "août", "septembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.150
+  }, 
+  {
+    "name": "Marrons", 
+    "saison": ["août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.1
+  }, 
+  {
+    "name": "Mélange de champignons prédécoupés", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Champignons", "Champignon"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.1
+  }, 
+  {
+    "name": "Mélange de jeunes pousses", 
+    "saison": ["avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Salade"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.3
+  }, 
+  {
+    "name": "Mélange de salades", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Salade"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.3
+  }, 
+  {
+    "name": "Nectarine", 
+    "saison": ["juin", "juillet", "août", "septembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.15
+  }, 
+  {
+    "name": "Oignon", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.1
+  }, 
+  {
+    "name": "Oignon jaune", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["oignon"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.1
+  }, 
+  {
+    "name": "Oignon nouveau", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": false,
+    "poids": 0.1
+  }, 
+  {
+    "name": "Oignon rouge", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.1
+  }, 
+  {
+    "name": "Pak choï", 
+    "saison": ["janvier", "février", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["chou frisé"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.3
+  }, 
+  {
+    "name": "Panais", 
+    "saison": ["septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.250
+  }, 
+  {
+    "name": "Patate douce", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Pommes de terre", "Patate"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.250
+  }, 
+  {
+    "name": "Poireau", 
+    "saison": ["janvier", "février", "mars", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Pois mange-tout", 
+    "saison": ["juin", "juillet", "août", "septembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.3
+  }, 
+  {
+    "name": "Poivron", 
+    "saison": ["juin", "juillet", "août", "septembre", "octobre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Poivron rouge", 
+    "saison": ["juin", "juillet", "août", "septembre", "octobre"], 
+    "remplacement": ["poivron"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Poivrons grillés", 
+    "saison": ["juin", "juillet", "août", "septembre", "octobre"], 
+    "remplacement": ["poivron"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Pomme", 
+    "saison": ["janvier", "février", "mars", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.15
+  }, 
+  {
+    "name": "Pommes de terre", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Patate", "Patate douce"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Pommes de terre Franceline", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Pommes de terre", "Patate", "Patate douce"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Pommes de terre à chair farineuse", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Pommes de terre", "Patate", "Patate douce"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Pommes de terre à chair ferme", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Pommes de terre", "Patate", "Patate douce"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Portobello", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.1
+  }, 
+  {
+    "name": "Potimarron", 
+    "saison": ["octobre", "novembre", "décembre"], 
+    "remplacement": ["Courge butternut", "Dés de butternut", "Potiron", "Butternut"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 1
+  }, 
+  {
+    "name": "Pousses de haricot mungo", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Prunes", 
+    "saison": ["août", "septembre", "octobre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.033
+  }, 
+  {
+    "name": "Purée de gingembre", 
+    "saison": ["janvier", "février", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": false,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Pêche jaune", 
+    "saison": ["juin", "juillet", "août", "septembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Radis", 
+    "saison": ["avril", "mai", "juin", "juillet", "août", "septembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.01
+  }, 
+  {
+    "name": "Roquette", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Salade", "Laitue"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Salade", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Sucrine", "Laitue"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Sucrine", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Salade", "Laitue"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Tomate", 
+    "saison": ["juin", "juillet", "août", "septembre"], 
+    "rayon": "marché", 
+    "remplacement": ["Tomates cerises"],
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Tomates cerises", 
+    "saison": ["juin", "juillet", "août", "septembre"], 
+    "remplacement": ["Tomate"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Topinambour", 
+    "saison": ["janvier", "février", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.1
+  }, 
+  {
+    "name": "Échalote", 
+    "saison": ["juin", "juillet", "août", "septembre"], 
+    "remplacement": ["oignon"],
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.04
+  }, 
+  {
+    "name": "Épinards", 
+    "saison": ["avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": true,
+    "poids": 0.2
+  }, 
+  {
+    "name": "Œuf", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": false
+  }, 
+  {
+    "name": "Coriandre", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": false
+  }, 
+  {
+    "name": "Persil", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": false
+  }, 
+  {
+    "name": "Basilic thaï", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": false
+  }, 
+  {
+    "name": "Menthe", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "marché", 
+    "indispensable": false
+  }, 
+  {
+    "name": "Crevettes", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "poissonnerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Filet d'églefin", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Poisson blanc"],
+    "rayon": "poissonnerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Filet d'églefin sans peau", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Poisson blanc"],
+    "rayon": "poissonnerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Filet de cabillaud sans peau", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Poisson blanc"],
+    "rayon": "poissonnerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Filet de lieu noir", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Poisson blanc"],
+    "rayon": "poissonnerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Filet de merlu avec peau", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+    "remplacement": ["Poisson blanc"], 
+    "rayon": "poissonnerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Filet de perche du Nil", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Poisson blanc"],
+    "rayon": "poissonnerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Saumon", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "poissonnerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Saumon fumé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  },
+ {
+    "name": "Escalope de dinde", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Filet de poulet"],
+    "rayon": "boucherie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Filet de poulet", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Hauts de cuisses de poulet", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie",
+   "remplacement": ["Filet de poulet"],
+    "indispensable": true
+  }, 
+  {
+    "name": "Bavette de bœuf", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie",
+    "indispensable": true
+  }, 
+  {
+    "name": "Rumsteak", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Bavette de bœuf"],
+    "rayon": "boucherie", 
+    "indispensable": true
+  },
+  {
+    "name": "Pavé de bœuf mariné",
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+    "remplacement": ["Bavette de bœuf"],
+    "rayon": "boucherie",
+    "indispensable": true
+  },
+  {
+    "name": "Émincés de bœuf", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Bavette de bœuf"],
+    "rayon": "boucherie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Bœuf haché", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Paupiette de veau", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie", 
+    "indispensable": true
+  },  
+  {
+    "name": "Escalope de veau", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie", 
+    "indispensable": true
+  },
+  {
+    "name": "Confit de canard", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie", 
+    "indispensable": true
+  },  
+  {
+    "name": "Filet de canard", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie", 
+    "indispensable": true
+  },
+  {
+    "name": "Chair à saucisse", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Dés de filet de porc", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Filet mignon de porc", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie", 
+    "indispensable": true
+  },
+  {
+    "name": "Tranches de carré de porc", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie", 
+    "indispensable": true
+  },  
+  {
+    "name": "Médaillons de porc", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Poitrine de porc", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Jambon blanc", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Lardons", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Échine de porc désossée", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boucherie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Demi-baguette", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boulangerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Pain de campagne tranché", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boulangerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Petit pain", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "boulangerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Pâte à tarte", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  },
+  {
+    "name": "Burrata", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Fromage blanc", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Fromage de chèvre frais", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Fromage frais aux herbes", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Fromage à la grecque", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Mozzarella", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Feta AOP", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Ravioli spinaci et ricotta", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Ricotta", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Halloumi", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Labneh", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Mascarpone", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Sauce tahini", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Sauce yaourt-tahini", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Lait", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Ravioles de Royan", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  },
+  {
+    "name": "Yaourt entier", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Yaourt à la grecque", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Émincés végétariens", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Camembert", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Cantal AOP", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Cheddar râpé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Parmesan", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Crème fraîche", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Crème liquide"],
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Crème épaisse", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Crème liquide"],
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Emmental", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Fromage de montagne râpé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Fromage italien râpé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Fromage râpé à l'italienne", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Fromage à griller", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Gouda Mi-Vieux râpé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Gouda Vieux râpé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Gouda râpé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Gruyère râpé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Comté râpé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Reblochon", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Toastinette", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Mini-copeaux de provolone", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  },  
+  {
+    "name": "Pecorino râpé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Sarasson aux herbes", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Tomme râpée", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fromagerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Nutella", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "frais", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Tortillas", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Falafels", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },   
+  {
+    "name": "Chapelure panko", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Chair de tomates", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },  
+  {
+    "name": "Concentré de tomates", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Tomates semi-séchées", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Crème liquide", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Lait de coco", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Petits pois en conserve", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },  
+  {
+    "name": "Pois chiches", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Haricots rouges", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Maïs en conserve", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Tofu nature BIO", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },    
+  {
+    "name": "Casarecce", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Torsade"],
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Coquillette", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Conchiglie", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Torsade"],
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Farfalle", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Torsade"],
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Fusilli", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Torsade"],
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Penne", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Torsade"],
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Rigatoni", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Torsade"],
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Linguine", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Spaghetti"],
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+ {
+    "name": "Spaghetti", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Tagliatelle", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Feuilles de lasagne", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Nouilles de blé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Nouilles plates de riz"],
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Nouilles plates de riz", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Nouilles soba", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Nouilles de blé", "Nouilles plates de riz"],
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Nouilles udon fraîches", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+    "remplacement": ["Nouilles de blé", "Nouilles plates de riz"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Couscous perlé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Semoule"],
+    "rayon": "épicerie", 
+    "indispensable": true
+  },  
+  {
+    "name": "Gnocchi", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Orzo", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Crozet au sarrasin", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Quinoa", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Orge perlé", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Boulgour", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Freekeh", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Semoule", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Lentilles corail", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Lentilles vertes", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },   
+  {
+    "name": "Riz", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },  
+  {
+    "name": "Riz pour risotto", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Pesto de champignons", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Pesto vert", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Pâte épicée balinaise", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Piment"],
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Pâte épicée javanaise", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Piment"],
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Pâte de curry vert", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+    "remplacement": ["Curry"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Olives Leccino dénoyautées", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Harissa", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Piment"],
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Miso blanc", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+    "remplacement": ["Sauce soja"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Sauce Worcestershire", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Sauce asiatique sucrée", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "remplacement": ["Sauce soja"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Sauce au chili sucrée et épicée", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Sauce poisson", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Sauce soja", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Beurre de cacahuètes", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Chutney d'abricots", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Chutney de cranberries", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Chutney de mangue", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Chutney piquant aux oignons", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Cranberries séchées", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Raisins secs Sultanines", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Mayonnaise", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Miel", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },  
+  {
+    "name": "Pain bao", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Pain burger aux graines", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Pain de mie", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Pain naan", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Pain pita complet", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épicerie", 
+    "indispensable": true
+  },
+  {
+    "name": "Mélange de graines de tournesol et de courge", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fruits secs", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Noix de cajou concassées", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fruits secs", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Graines de tournesol", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fruits secs", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Graines de courge", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fruits secs", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Amandes", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fruits secs", 
+    "indispensable": false
+  }, 
+  {
+    "name": "Cacahuètes", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fruits secs", 
+    "indispensable": false
+  }, 
+  {
+    "name": "Pistaches", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fruits secs", 
+    "indispensable": true
+  },
+  {
+    "name": "Noisettes", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fruits secs", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Noix concassées", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fruits secs", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Noix de cajou", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fruits secs", 
+    "indispensable": true
+  },  
+  {
+    "name": "Noix de coco râpée", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fruits secs", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Noix de pécan concassées", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "fruits secs", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Origan", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Romarin", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Thym", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  },
+ {
+    "name": "Aneth", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": false
+  }, 
+  {
+    "name": "Basilic", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Ciboulette", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  },  
+  {
+    "name": "Feuille de laurier", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Sauge", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Estragon", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  },
+  {
+    "name": "Noix de muscade", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  },  
+  {
+    "name": "Gomasio", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  },    
+  {
+    "name": "Piment", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Piment rouge", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Piri-piri", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  },
+  {
+    "name": "Vadouvan", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Yazzara", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Zaatar", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Épices italiennes", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Herbes de Provence", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Épices mexicaines", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  },
+  {
+    "name": "Cannelle en poudre", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  },
+  {
+    "name": "Coriandre moulue", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Citronnelle moulue", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": false
+  }, 
+  {
+    "name": "Cumin en poudre", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Curcuma", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  },
+  {
+    "name": "Garam masala", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  },  
+  {
+    "name": "Curry", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Curry jaune", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Curry rouge", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Curry vert", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  },  
+  {
+    "name": "Paprika", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Ras el-hanout", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  },
+  {
+    "name": "Mélange d'épices africaines", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Mélange d'épices du Moyen-Orient", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Mélange d'épices péruviennes", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "épices", 
+    "indispensable": true
+  },  
+  {
+    "name": "Beurre", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Cube de bouillon de bœuf", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Cube de bouillon de légumes", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Cube de bouillon de poisson", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Cube de bouillon de volaille", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Bouillon de bœuf", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Bouillon de légumes", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Bouillon de volaille", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Cassonade", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Farine", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  },
+  {
+    "name": "Farine de blé noir", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Huile d'olive", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Huile d'olive parfumée au citron", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Huile d'olive vierge extra", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Huile de sésame", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Huile de tournesol", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Moutarde", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Poivre et sel", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Sucre", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Vinaigre balsamique blanc ou de riz", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Vinaigre balsamique noir", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Vinaigre de vin blanc", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }, 
+  {
+    "name": "Vinaigre de vin rouge ou de cidre", 
+    "saison": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"], 
+    "rayon": "placard", 
+    "indispensable": true
+  }
+]

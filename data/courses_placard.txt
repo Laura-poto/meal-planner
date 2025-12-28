@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Lait de coco",
+    "quantity": 220.0
+  },
+  {
+    "name": "Crème liquide",
+    "quantity": 400.0
+  },
+  {
+    "name": "Tagliatelle",
+    "quantity": 720.0
+  },
+  {
+    "name": "Nouilles plates de riz",
+    "quantity": 520.0
+  },
+  {
+    "name": "Nouilles de blé",
+    "quantity": 400.0
+  },
+  {
+    "name": "Feuilles de lasagne",
+    "quantity": 150.0
+  },
+  {
+    "name": "Filet de poulet",
+    "quantity": 1200.0
+  },
+  {
+    "name": "Bœuf haché",
+    "quantity": 800.0
+  },
+  {
+    "name": "Bavette de bœuf",
+    "quantity": 800.0
+  },
+  {
+    "name": "Saumon",
+    "quantity": 4.0
+  }
+]

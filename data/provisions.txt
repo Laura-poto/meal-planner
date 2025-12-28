@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Concentré de tomates",
+    "quantity": 4,
+    "quantity_min": 2
+  },
+  {
+    "name": "Chair de tomates",
+    "quantity": 3,
+    "quantity_min": 2
+  },
+  {
+    "name": "Tomates semi-séchées",
+    "quantity": 440.0,
+    "quantity_min": 280
+  },
+  {
+    "name": "Lait de coco",
+    "quantity": 580.0,
+    "quantity_min": 800
+  },
+  {
+    "name": "Crème liquide",
+    "quantity": 0,
+    "quantity_min": 400
+  },
+  {
+    "name": "Semoule",
+    "quantity": 1500,
+    "quantity_min": 600
+  },
+  {
+    "name": "Torsade",
+    "quantity": 2000,
+    "quantity_min": 720
+  },
+  {
+    "name": "Coquillette",
+    "quantity": 1640.0,
+    "quantity_min": 720
+  },
+  {
+    "name": "Polenta",
+    "quantity": 2000,
+    "quantity_min": 720
+  },
+  {
+    "name": "Riz",
+    "quantity": 1700.0,
+    "quantity_min": 1000
+  },
+  {
+    "name": "Riz pour risotto",
+    "quantity": 500,
+    "quantity_min": 500
+  },
+  {
+    "name": "Spaghetti",
+    "quantity": 1240.0,
+    "quantity_min": 720
+  },
+  {
+    "name": "Tagliatelle",
+    "quantity": 0,
+    "quantity_min": 720
+  },
+  {
+    "name": "Nouilles plates de riz",
+    "quantity": 0,
+    "quantity_min": 520
+  },
+  {
+    "name": "Nouilles de blé",
+    "quantity": 0,
+    "quantity_min": 400
+  },
+  {
+    "name": "Feuilles de lasagne",
+    "quantity": 250,
+    "quantity_min": 400
+  },
+  {
+    "name": "Pois chiches",
+    "quantity": 2,
+    "quantity_min": 1
+  },
+  {
+    "name": "Haricots rouges",
+    "quantity": 1,
+    "quantity_min": 1
+  },
+  {
+    "name": "Lentilles corail",
+    "quantity": 800,
+    "quantity_min": 400
+  },
+  {
+    "name": "Lentilles",
+    "quantity": 200,
+    "quantity_min": 200
+  },
+  {
+    "name": "Filet de poulet",
+    "quantity": 400.0,
+    "quantity_min": 1600
+  },
+  {
+    "name": "Bœuf haché",
+    "quantity": 0,
+    "quantity_min": 800
+  },
+  {
+    "name": "Bavette de bœuf",
+    "quantity": 0,
+    "quantity_min": 800
+  },
+  {
+    "name": "Saumon",
+    "quantity": 4,
+    "quantity_min": 8
+  },
+  {
+    "name": "Poisson blanc",
+    "quantity": 8.0,
+    "quantity_min": 8
+  },
+  {
+    "name": "Sauce poisson",
+    "quantity": 940.0,
+    "quantity_min": 200
+  },
+  {
+    "name": "Sauce soja",
+    "quantity": 996.0,
+    "quantity_min": 200
+  },
+  {
+    "name": "Beurre de cacahuètes",
+    "quantity": 1000,
+    "quantity_min": 200
+  },
+  {
+    "name": "Chapelure panko",
+    "quantity": 1000,
+    "quantity_min": 200
+  },
+  {
+    "name": "Miel",
+    "quantity": 1000,
+    "quantity_min": 200
+  }
+]
