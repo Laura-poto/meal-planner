@@ -5296,7 +5296,7 @@
         "qty": 1.98,
         "unit": "cc"
       },
-      "Dés de butternut": {
+      "Butternut": {
         "qty": 300,
         "unit": "g"
       },
