@@ -2,6 +2,7 @@ from pathlib import Path
 import streamlit as st
 import pandas as pd
 import unicodedata
+import html
 import engine
 
 
@@ -68,6 +69,8 @@ df = df.rename(columns={
 cols = ["catégorie", "nom", "taux de match marché", "OK marché", "manque marché", "link"]
 cols = [c for c in cols if c in df.columns]  # sécurité
 
+# On veut afficher les colonnes sans la catégorie (affichée en titre)
+# et ne pas afficher explicitement la colonne 'link' :
 cols_sub = [c for c in cols if c != "catégorie"]  # la catégorie sera dans le sous-titre, pas dans le tableau
 # Remplace la section de tri des catégories par ton ordre personnalisé
 CUSTOM_CATEGORY_ORDER = [
@@ -101,16 +104,69 @@ for cat in categories:
     # hauteur auto (évite un gros tableau vide)
     h = min(520, 38 * (len(sdf) + 1) + 20)
 
-    st.data_editor(
-        sdf[cols_sub],
-        use_container_width=True,
-        height=h,
-        disabled=True,
-        column_config={
-            "link": st.column_config.LinkColumn("lien"),
-        },
-        key=f"table_{str(cat).casefold()}",
+    # Préparer les colonnes à afficher : on ne montre pas explicitement la
+    # colonne 'link'. Si elle existe, on transforme la colonne 'nom' en
+    # liens HTML et on affiche un tableau HTML (avec les ancres <a>), sinon
+    # on affiche un data_editor simple.
+    visible_cols = [c for c in cols_sub if c != "link"]
+
+    # Construire un DataFrame pour affichage (avec ou sans liens)
+    if "link" in sdf.columns:
+        df_display = sdf[visible_cols].copy()
+
+        def _make_anchor(row):
+            url = row.get("link", "")
+            name = row.get("nom", "")
+            name_escaped = html.escape(str(name))
+            url_escaped = html.escape(str(url))
+            if pd.isna(url) or url == "":
+                return name_escaped
+            return f'<a href="{url_escaped}" target="_blank" rel="noopener noreferrer">{name_escaped}</a>'
+
+        if "nom" in df_display.columns:
+            df_display["nom"] = sdf.apply(_make_anchor, axis=1)
+    else:
+        df_display = sdf[visible_cols].copy()
+
+    # Nettoyer les colonnes contenant des listes pour enlever crochets
+    for col in ["OK marché", "manque marché"]:
+        if col in df_display.columns:
+            def _clean_cell(v):
+                if isinstance(v, (list, tuple, set)):
+                    return ", ".join(map(str, v))
+                if pd.isna(v):
+                    return ""
+                s = str(v)
+                # retire crochets s'ils existent dans la représentation
+                if s.startswith("[") and s.endswith("]"):
+                    return s[1:-1]
+                return s
+            df_display[col] = df_display[col].apply(_clean_cell)
+
+    # Générer HTML et appliquer CSS pour aligner les tableaux
+    html_table = df_display.to_html(escape=False, index=False)
+    html_table = html_table.replace('class="dataframe"', 'class="mealplanner"')
+
+    # CSS : mise en page et alignement. On construit un seul <style> pour
+    # éviter que le CSS soit affiché comme du texte.
+    base_css = (
+        "table.mealplanner { width:100%; border-collapse:collapse; table-layout:fixed; }"
+        "table.mealplanner th, table.mealplanner td { padding:6px; text-align:left; vertical-align:middle; border-bottom:1px solid #ddd; }"
+        "table.mealplanner th { background:#f9f9f9; }"
     )
+
+    # Centrer les colonnes numériques/OK/manque si présentes
+    center_cols = ["taux de match marché", "OK marché", "manque marché"]
+    extra_css_lines = []
+    for col in center_cols:
+        if col in df_display.columns:
+            idx = list(df_display.columns).index(col) + 1
+            extra_css_lines.append(f'table.mealplanner td:nth-child({idx}), table.mealplanner th:nth-child({idx}) {{ text-align:center; }}')
+
+    style_content = base_css + ("\n" + "\n".join(extra_css_lines) if extra_css_lines else "")
+    css = f"<style>{style_content}</style>"
+
+    st.markdown(css + html_table, unsafe_allow_html=True)
 
 st.divider()
 
