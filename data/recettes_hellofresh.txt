@@ -343,16 +343,16 @@
     "desc_part_5": "NA",
     "desc_part_6": "NA"
   },
- {
+  {
     "name": "Croque-monsieur",
     "link": "https://www.marmiton.org/recettes/recette_croque-monsieur_19208.aspx",
     "category": "🎉 craquage",
     "ingredients": {
-     "Jambon blanc": {
+      "Jambon blanc": {
         "qty": 4,
         "unit": "tranche(s)"
       },
-     "Toastinette": {
+      "Toastinette": {
         "qty": 8,
         "unit": "tranche(s)"
       },
@@ -3782,7 +3782,7 @@
   {
     "name": "Tarte provençale courgettes & ricotta",
     "link": "https://www.hellofresh.fr/recipes/tarte-provencale-courgettes-and-ricotta-64073d7a683721c9a32b0842",
-    "category": "🥧 tarte",    
+    "category": "🥧 tarte",
     "ingredients": {
       "Pâte à tarte": {
         "qty": 1,
@@ -16490,5 +16490,64 @@
     "desc_part_4": "Faites à nouveau chauffer la poêle de la viande avec ½ cs d'huile à l'ail par personne à feu moyen-vif. Faites-y tomber les épinards 2-3 min avec le paprika fumé et l'échalote ciselée grossièrement, puis déglacez avec un filet d'eau. Grattez bien la poêle avec une spatule pour décoller les sucs. Salez et poivrez.",
     "desc_part_5": "Une fois la patate douce cuite, égouttez-la. Ajoutez une noix de beurre par personne, salez, poivrez puis écrasez-la avec un presse-purée. Dans un bol, mélangez l’échalote finement ciselée, les herbes et le piment. Ajoutez le reste de l'huile parfumée à l'ail et ½ cs de vinaigre balsamique noir par personne. Salez, poivrez et mélangez.",
     "desc_part_6": "Coupez le pavé de bœuf en tranches et servez-le dans les assiettes avec la purée de patate douce à côté. Disposez la tombée d'épinards par-dessus. Servez la sauce chimichurri à côté."
+  },
+  {
+    "name": "Tarte façon Tatin d'oignons & burrata",
+    "link": "https://www.hellofresh.fr/recipes/tatin-doignons-and-burrata-65203d49188676f47c1b3086",
+    "ingredients": {
+      "Pâte à tarte": {
+        "qty": 1,
+        "unit": "pièce(s)"
+      },
+      "Oignon": {
+        "qty": 5,
+        "unit": "pièce(s)"
+      },
+      "Thym séché": {
+        "qty": 0.5,
+        "unit": "sachet(s)"
+      },
+      "Burrata": {
+        "qty": 1,
+        "unit": "pièce(s)"
+      },
+      "Salade": {
+        "qty": 1,
+        "unit": "sachet(s)"
+      },
+      "Beurre": {
+        "qty": 20,
+        "unit": "g"
+      },
+      "Sucre": {
+        "qty": 1,
+        "unit": "cs"
+      },
+      "Vinaigre balsamique noir": {
+        "qty": 2,
+        "unit": "cc"
+      },
+      "Moutarde": {
+        "qty": 2,
+        "unit": "cc"
+      },
+      "Huile d'olive": {
+        "qty": 2,
+        "unit": "cs"
+      },
+      "Poivre et sel": {
+        "qty": null,
+        "unit": "selon le goût"
+      }
+    },
+    "total_time": "50 min",
+    "prep_time": "30 minutes",
+    "difficulty": "Facile",
+    "desc_part_1": "Veillez à bien respecter les quantités indiquées à gauche pour préparer votre recette ! Gardez la pâte à tarte au réfrigérateur jusqu’au dernier moment, ainsi, elle sera plus facile à manipuler. Coupez les oignons en fines demi-lunes de 5 mm.",
+    "desc_part_2": "Préchauffez le four à 220°C (200°C chaleur tournante). Faites fondre le beurre dans une grande poêle à feu moyen-vif. Ajoutez-y ½ cs de sucre par personne et remuez jusqu'à ce qu'il soit presque dissous. Ajoutez les oignons. Faites-les revenir 8-12 min en remuant régulièrement, ou jusqu'à ce qu'ils soient bien caramélisés et dorés. Salez et poivrez.",
+    "desc_part_3": "Beurrez légèrement un plat à four rond. Placez les oignons au fond du plat. Veillez à ce qu'ils forment une couche uniforme. Arrosez-les d'un filet de vinaigre balsamique noir et saupoudrez-les de ¼ sachet de thym séché par personne. Salez et poivrez. Étalez une fine couche de moutarde sur la pâte. Recouvrez les oignons avec la pâte (côté moutardé vers l'intérieur) en repliant les bords sur les côtés du plat. Piquez-la sur toute sa surface avec une fourchette.",
+    "desc_part_4": "Enfournez la tarte 15-20 min, ou jusqu'à ce que la pâte soit dorée et cuite, puis laissez-la reposer 5 min. Égouttez la burrata et coupez-la en deux. Juste avant de servir, faites une vinaigrette en mélangeant de l’huile d’olive avec du vinaigre balsamique dans un saladier. Salez et poivrez. Ajoutez la salade et remuez.",
+    "desc_part_5": "Passez un couteau le long du bord du plat pour en décoller la pâte. Placez une assiette de service par-dessus. Avec des gants de cuisine, saisissez fermement l'assiette et le plat à four en les retournant rapidement. Soulevez délicatement le plat à four.",
+    "desc_part_6": "Coupez la tarte en deux. Servez-la dans les assiettes. Garnissez chaque assiette d'une demi-burrata. Arrosez d’un mince filet d’huile d’olive et de vinaigre balsamique. Parsemez d’une pincée de thym séché (selon votre goût), de sel et de poivre. Servez la salade à côté."
   }
 ]
