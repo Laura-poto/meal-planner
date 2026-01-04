@@ -1,7 +1,6 @@
 [
 "salade",
 "pomme de terre",
-"salade",
 "mâche",
 "endive",
 "navet",
