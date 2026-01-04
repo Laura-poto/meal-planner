@@ -16494,6 +16494,7 @@
   {
     "name": "Tarte façon Tatin d'oignons & burrata",
     "link": "https://www.hellofresh.fr/recipes/tatin-doignons-and-burrata-65203d49188676f47c1b3086",
+    "category": "🥧 tarte",
     "ingredients": {
       "Pâte à tarte": {
         "qty": 1,
