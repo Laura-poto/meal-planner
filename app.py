@@ -69,10 +69,29 @@ cols = ["catégorie", "nom", "taux de match marché", "taux de match placard", "
 cols = [c for c in cols if c in df.columns]  # sécurité
 
 cols_sub = [c for c in cols if c != "catégorie"]  # la catégorie sera dans le sous-titre, pas dans le tableau
-order_map = {c.casefold(): i for i, c in enumerate(engine.CATEGORY_ORDER)}
+# Remplace la section de tri des catégories par ton ordre personnalisé
+CUSTOM_CATEGORY_ORDER = [
+    "🍗 poulet",
+    "🥩 boeuf",
+    "🌮 boeuf haché",
+    "🍖 porc",
+    "🦆 canard",
+    "🍝 pâtes végé",
+    "🥕 végé",
+    "🍜 soupe",
+    "🥧 tarte",
+    "🥬 salade",
+    "🍣 saumon",
+    "🐟 poisson blanc",
+    "🦐 crevettes"
+]
+
+order_map = {c: i for i, c in enumerate(CUSTOM_CATEGORY_ORDER)}
+
+# Trier les catégories selon CUSTOM_CATEGORY_ORDER, les autres à la fin
 categories = sorted(
     df["catégorie"].dropna().unique(),
-    key=lambda c: (order_map.get(str(c).casefold(), 999), str(c).casefold())
+    key=lambda c: order_map.get(c, 999)
 )
 
 for cat in categories:
