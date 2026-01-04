@@ -246,5 +246,6 @@
 "https://www.hellofresh.fr/recipes/spaghetti-aux-crevettes-et-courgette-60c8aa685c6b094c8b4f005e",
 "https://www.hellofresh.fr/recipes/nouilles-aux-crevettes-facon-pad-thai-603e73ddb2aefb69c221b2c2",
 "https://www.hellofresh.fr/recipes/laksa-aux-crevettes-and-lait-de-coco-632060a7b788869acb0c022a",
-"https://www.hellofresh.fr/recipes/boeuf-chimichurri-and-puree-de-patate-douce-64fae7d132e9107c6db86eb3"
+"https://www.hellofresh.fr/recipes/boeuf-chimichurri-and-puree-de-patate-douce-64fae7d132e9107c6db86eb3",
+"https://www.hellofresh.fr/recipes/tatin-doignons-and-burrata-65203d49188676f47c1b3086"
 ]
