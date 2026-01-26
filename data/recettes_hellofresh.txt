@@ -89,28 +89,16 @@
         "unit": "g"
       },
       "Œuf": {
-        "qty": 3.5,
+        "qty": 2.5,
         "unit": "pièce(s)"
-      },
-      "Farine": {
-        "qty": 80,
-        "unit": "g"
       },
       "Sucre": {
         "qty": 2,
         "unit": "cc"
       },
-      "Huile de tournesol": {
-        "qty": 0.5,
-        "unit": "cs"
-      },
       "Beurre": {
         "qty": 14,
         "unit": "g"
-      },
-      "Lait": {
-        "qty": 160,
-        "unit": "ml"
       },
       "Jambon blanc": {
         "qty": 2,
