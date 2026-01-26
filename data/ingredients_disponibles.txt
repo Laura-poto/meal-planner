@@ -8,7 +8,6 @@
 "boule d'or",
 "radis",
 "céleri branche",
-"chou-fleur",
 "chou rouge",
 "chou frisé",
 "épinard",

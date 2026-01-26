@@ -8238,7 +8238,7 @@
   {
     "name": "Waterzooi à la Gantoise",
     "link": "https://www.hellofresh.fr/recipes/waterzooi-a-la-gantoise-5d19d700fca63a001a56020b",
-    "category": "🍜 soupe",
+    "category": "🍗 poulet",
     "ingredients": {
       "Filet de poulet": {
         "qty": 200,
@@ -12255,6 +12255,7 @@
     "desc_part_5": "",
     "desc_part_6": ""
   },
+  
   {
     "name": "Nouilles au bœuf sauté à la thaï",
     "link": "https://www.hellofresh.fr/recipes/nouilles-au-boeuf-saute-a-la-thai-62bb06b54bc0527b6403986a",
@@ -12470,7 +12471,7 @@
   {
     "name": "Udon au bœuf haché sauce curry coco",
     "link": "https://www.hellofresh.fr/recipes/udon-au-boeuf-hache-sauce-curry-coco-65085d4253d80a03621137e0",
-    "category": "🥩 boeuf",
+    "category": "🌮 boeuf haché",
     "ingredients": {
       "Oignon": {
         "qty": 1,
@@ -14938,6 +14939,70 @@
       },
       "Beurre": {
         "qty": 1,
+        "unit": "cs"
+      },
+      "Poivre et sel": {
+        "qty": null,
+        "unit": "selon le goût"
+      }
+    },
+    "total_time": "25 min",
+    "prep_time": "25 minutes",
+    "difficulty": "Facile",
+    "desc_part_1": "Veillez à bien respecter les quantités indiquées à gauche pour préparer votre recette ! Portez une casserole d'eau à ébullition pour les pâtes avec le cube de bouillon. Coupez l'oignon en fines demi-lunes de 5 mm. Ciselez l'ail et le poireau finement. Faites cuire les linguine 12-14 min. Égouttez-les en réservant ¼ louche d'eau de cuisson par personne. Ajoutez un filet d'huile d'olive pour qu'elles ne collent pas entre elles et réservez-les à couvert.",
+    "desc_part_2": "Épongez le lieu avec de l’essuie-tout. Faites chauffer un petit filet d’huile d'olive et une noix de beurre avec ½ cc de curry par personne (ça pique ! Dosez-le selon votre goût) dans une grande sauteuse à feu moyen-vif. Faites-y le lieu  2-3 min de chaque côté, ou jusqu'à ce que la chair ne soit plus translucide. Salez-le légèrement et poivrez. Réservez-le dans une assiette recouverte d'aluminium pour le garder au chaud.",
+    "desc_part_3": "Réservez le mélange huile-beurre au curry dans un bol pour le service, et conservez la sauteuse. Faites-y à nouveau chauffer un filet d'huile d'olive à feu moyen-vif. Faites revenir l'oignon, le poireau et l'ail avec ½ cc de curry par personne 5-7 min, ou jusqu'à ce que l'oignon devienne translucide et que le poireau soit fondant. Pendant ce temps, effeuillez et ciselez l'aneth. Prélevez le zeste du citron avec une râpe fine et coupez-le en quartiers.",
+    "desc_part_4": "Ajoutez la crème, le fromage et la moitié de l'aneth dans la sauteuse. Poursuivez la cuisson 2-3 min, ou jusqu'à ce que la crème épaississe un peu. Ajoutez les pâtes, l'eau de cuisson réservée, quelques gouttes de jus de citron et une pincée de zestes selon votre goût. Remuez 1 min. Rectifiez l'assaisonnement en sel et poivre (selon votre goût). Servez les pâtes dans les assiettes. Ajoutez le lieu par-dessus, arrosez-le du mélange huile-beurre au curry et parsemez du reste d'aneth.",
+    "desc_part_5": "",
+    "desc_part_6": ""
+  },
+  {
+    "name": "Linguine & poisson à la sauce hollandaise",
+    "link": "https://www.hellofresh.fr/recipes/linguine-a-la-creme-daneth-and-poisson-au-curry-658069cebd1df37bfc868696",
+    "category": "🐟 poisson blanc",
+    "ingredients": {
+      "Linguine": {
+        "qty": 180,
+        "unit": "g"
+      },
+      "Oignon": {
+        "qty": 1,
+        "unit": "pièce(s)"
+      },
+      "Poireau": {
+        "qty": 1,
+        "unit": "pièce(s)"
+      },
+      "Carotte": {
+        "qty": 1,
+        "unit": "pièce(s)"
+      },
+      "Gousse d'ail": {
+        "qty": 1,
+        "unit": "pièce(s)"
+      },
+      "Filet de lieu noir": {
+        "qty": 2,
+        "unit": "pièce(s)"
+      },
+      "Beurre": {
+        "qty": 100,
+        "unit": "g"
+      },
+      "Œuf": {
+        "qty": 1.5,
+        "unit": "pièce(s)"
+      },
+      "Citron": {
+        "qty": 0.5,
+        "unit": "pièce(s)"
+      },
+      "Cube de bouillon de légumes": {
+        "qty": 0.5,
+        "unit": "pièce(s)"
+      },
+      "Huile d'olive": {
+        "qty": 2,
         "unit": "cs"
       },
       "Poivre et sel": {
