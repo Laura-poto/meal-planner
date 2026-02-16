@@ -8005,7 +8005,7 @@
     "category": "🍗 poulet",
     "ingredients": {
       "Carotte": {
-        "qty": 2,
+        "qty": 3,
         "unit": "pièce(s)"
       },
       "Oignon": {
@@ -16447,10 +16447,6 @@
       },
       "Crevettes": {
         "qty": 180,
-        "unit": "g"
-      },
-      "Chou rouge": {
-        "qty": 0.5,
         "unit": "g"
       },
       "Sauce soja": {
