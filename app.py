@@ -174,7 +174,9 @@ st.divider()
 st.subheader("✅ Choisir les recettes et générer les courses")
 
 options = [r["name"] for r in match["scored"]]  # on propose les recettes filtrées
-selection = st.multiselect("Recettes", options=options, default=[])
+selection = st.multiselect("Recettes", options=options, default=[], help="Utilise Ctrl/Cmd+clic pour sélectionner plusieurs items")
+if selection:
+    st.markdown('**Recettes sélectionnées :**  ' + '  |  '.join(selection))
 
 personnes = st.number_input("Nombre de personnes", min_value=1, max_value=12, value=4, step=1)
 update_prov = st.checkbox("Mettre à jour le placard (provisions.txt) et générer courses_placard.txt", value=False)
