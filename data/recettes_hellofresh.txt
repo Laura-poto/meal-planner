@@ -12986,7 +12986,7 @@
     "category": "🥩 boeuf",
     "ingredients": {
       "Gousse d'ail": {
-        "qty": 3,
+        "qty": 1,
         "unit": "pièce(s)"
       },
       "Échalote": {
